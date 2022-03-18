@@ -166,10 +166,9 @@ height:250px;
 padding:0px;
 position:absolute;
 top:110px;
-margin-left:0;
 align-items:center;
 z-index:999;
-left:0px;
+left:10px;
 }
 
 @keyframes slidero {
@@ -191,7 +190,7 @@ background-position:center;
 background-repeat:no-repeat;
 height:45px;
 margin-right:10px;
-border-radius:100px;
+border-radius:1000px;
 animation:slidero 2s linear infinite;
 }
 
@@ -209,8 +208,6 @@ display:block;
 #red:hover ~ .blue{
 display:flex;
 animation:sli 0.2s linear;
-position:relative;
-z-index:999999;
 }
 
 .cyan{
