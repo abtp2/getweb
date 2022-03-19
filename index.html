@@ -12,7 +12,13 @@
 			<title>Get Web</title>
 			<link rel="icon" href="logo2.png">
 </head>
-<body style="background:#8419e5;" onload="check()" id="body">
+<body style="background:#8419e5;" onload="check()" onclick="sound()" id="body">
+		
+<!-- click sound -->
+<audio id="myAudio" hidden>
+  <source src="cilck.ogg" type="audio/ogg">
+  <source src="cilck.mp3" type="audio/mp3">
+</audio>						
 		
 <!-- Slidebutton -->				
 <div class="slidebutton">
@@ -40,8 +46,7 @@
 <div class="collapse navbar-collapse" id="navbarSupportedContent"> 
 <ul class="navbar-nav mx-auto mb-2 mb-lg-0"> <li class="nav-item"> 
 			
-<a class="nav-link active" aria-current="page" href="#header" id="nav_link" style="background-color:#8419e5;
-border-radius:10px;color:#fff;">Home</a> </li> 
+<a class="nav-link active" aria-current="page" href="#header" id="nav_link" style="background-color:#8419e5;border-radius:10px;color:#fff;">Home</a> </li> 
  
  
 
@@ -92,12 +97,12 @@ border-radius:10px;color:#fff;">Home</a> </li>
 			
 <br><br>
 
-<form action="https://www.google.com/search" method="GET" id="myForm" >
+<form action="https://www.google.com/search" method="GET" id="myForm">
 <div class="container-fluid" id="head_search">
 <span>			
 <input type="search" placeholder="Search GetWeb...." name="q">
 &nbsp
-<img src="searchfinal.png" value="Submit" width="10%" height="25" id="head_serimg" onclick="formsub()">
+<img src="searchfinal.png" width="10%" height="25" id="head_serimg" onclick="myFunct()">
 </span>
 </div>			
 </form>
@@ -662,7 +667,20 @@ netraballabhpandey@gmail.com</span>
 
 
 
+
+
 <!-- scripting section -->
+<script>
+function sound(){
+  document.getElementById("myAudio").play();
+ }
+</script>
+
+<script>
+function myFunct() {
+  document.getElementById("myForm").submit();
+}
+</script>
 
 <script>
 window.addEventListener('contextmenu', function (e) {
