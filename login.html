@@ -6,9 +6,15 @@
     <meta name="theme-color" content="#8419e5">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
-    <title>Login form / GetWeb</title>
+    <title>Login form-GetWeb</title>
    </head>
-<body>
+<body onclick="sound()">
+
+<!-- click sound -->
+<audio id="myAudio" hidden>
+  <source src="cilck.ogg" type="audio/ogg">
+  <source src="cilck.mp3" type="audio/mp3">
+</audio>						
 			
   <div class="container">
     <input type="checkbox" id="flip">
@@ -32,7 +38,7 @@
         <div class="form-content">
           <div class="login-form">
             <div class="title">Login</div>
-          <form action="#">
+          <form action="index.html">
             <div class="input-boxes">
               <div class="input-box">
                 <i class="fas fa-envelope"></i>
@@ -299,5 +305,12 @@ body{
 }
 
 </style>
+
+<script>
+function sound(){
+  document.getElementById("myAudio").play();
+ }
+</script>
+
 </body>
 </html>

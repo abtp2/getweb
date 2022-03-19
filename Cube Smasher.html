@@ -8,7 +8,13 @@
 <meta name="theme-color" content="#8419e5">
 
 </head>
-<body>
+<body onclick="sound()">
+
+<!-- click sound -->
+<audio id="myAudio" hidden>
+  <source src="cilck.ogg" type="audio/ogg">
+  <source src="cilck.mp3" type="audio/mp3">
+</audio>						
 <!-- partial:index.partial.html -->
 <!-- Game canvas -->
 
@@ -29,7 +35,7 @@
 <!-- Menu System -->
 <div class="menus">
 	<div class="menu menu--main">
-		<h1>Cube smasher</h1>
+		<h1>Cube Smasher</h1>
 		<button type="button" class="play-normal-btn">PLAY GAME</button>
 		<button type="button" class="play-casual-btn">CASUAL MODE</button>
 		<a href="index.html" style="text-decoration:none;">
@@ -321,6 +327,12 @@ a {
 	
 </style>
 <!-- partial -->
+<script>
+function sound(){
+  document.getElementById("myAudio").play();
+ }
+</script>
+
 <script>
 // globalConfig.js
 // ============================================================================

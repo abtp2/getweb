@@ -452,7 +452,12 @@ body.darktheme #textareawrapper {
 </style>
 <![endif]-->
 </head>
-<body>
+<body onclick="sound()">
+<!-- click sound -->
+<audio id="myAudio" hidden>
+  <source src="cilck.ogg" type="audio/ogg">
+  <source src="cilck.mp3" type="audio/mp3">
+</audio>						
 
 <center>
 <div style="letter-spacing:1px;">
@@ -1088,5 +1093,11 @@ window.onclick = function(event) {
 }
 uic_r_e()
 </script>
+<script>
+function sound(){
+  document.getElementById("myAudio").play();
+ }
+</script>
+
 </body>
 </html>

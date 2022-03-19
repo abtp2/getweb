@@ -182,7 +182,14 @@ letter-spacing:1.5px;
 }
     </style>
 </head>
-<body>
+<body onclick="sound()">
+<audio id="myAudio">
+  <source src="cilck.ogg" type="audio/ogg">
+  <source src="cilck.mp3" type="audio/mp3">
+  Your browser does not support the audio element.
+</audio>				
+				
+				
 <div class="main">
 <h1>Color Picker</h1>
 <a href="index.html" id="homea">Home</a>
@@ -202,12 +209,11 @@ letter-spacing:1.5px;
             
             <div class="saved-color" style="background:#0018ff;" onclick="showcolo()"><font color="#fff" id="hidecolo">#0018ff</font></div>
       
-        </div>
+        </div>        
     </div>
-
-<div id="footer">
+  <div id="footer">
 <h4>Created by <a href="index.html">Get Web</a> || All ©️rights reserved. </h4>
-</div>
+</div> 
 </div>
     <script>
         class ColorPicker {
@@ -272,23 +278,33 @@ letter-spacing:1.5px;
  
  <script>
  function showc(){
- document.getElementById("hidec").style.display="block"
+ document.getElementById("hidec").style.display="block";
+ document.getElementById("myAudio").play();
  }
 </script>
 <script>
 function showco(){
- document.getElementById("hideco").style.display="block"
+ document.getElementById("hideco").style.display="block";
+  document.getElementById("myAudio").play();
  }
 </script>
 <script>
 function showcol(){
- document.getElementById("hidecol").style.display="block"
+ document.getElementById("hidecol").style.display="block";
+ document.getElementById("myAudio").play(); 
  }
 </script>
 <script>
 function showcolo(){
- document.getElementById("hidecolo").style.display="block"
+ document.getElementById("hidecolo").style.display="block";
+  document.getElementById("myAudio").play();
  }
 </script>
+<script>
+function sound(){
+  document.getElementById("myAudio").play();
+ }
+</script>
+
 </body>
 </html>

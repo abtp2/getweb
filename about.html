@@ -6,8 +6,12 @@
 			<link rel="stylesheet" href="aboutstyle.css">
 			<title>Page title</title>
 </head>
-<body>
-
+<body onclick="sound()">
+<!-- click sound -->
+<audio id="myAudio" hidden>
+  <source src="cilck.ogg" type="audio/ogg">
+  <source src="cilck.mp3" type="audio/mp3">
+</audio>						
 <div id="main">
 <div id="box">
 <div id="box_img">
@@ -75,5 +79,13 @@ It is run by Ashutosh Pandey in India.
 </center>
 </div>
 </div>
+
+<!-- scripting  section-->
+<script>
+function sound(){
+  document.getElementById("myAudio").play();
+ }
+</script>
+
 </body>
 </html>
