@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<!-- Coding by CodingLab | www.codinglabweb.com-->
-<html lang="en" dir="ltr">
+<html lang="en">
   <head>
     <meta charset="UTF-8">
     <meta name="theme-color" content="#8419e5">
@@ -16,6 +15,7 @@
   <source src="cilck.mp3" type="audio/mp3">
 </audio>						
 			
+<!-- main section -->
   <div class="container">
     <input type="checkbox" id="flip">
     <div class="cover">
@@ -38,7 +38,7 @@
         <div class="form-content">
           <div class="login-form">
             <div class="title">Login</div>
-          <form action="index.html">
+          <form action="index.html" onsubmit="message()">
             <div class="input-boxes">
               <div class="input-box">
                 <i class="fas fa-envelope"></i>
@@ -310,6 +310,12 @@ body{
 function sound(){
   document.getElementById("myAudio").play();
  }
+</script>
+
+<script>
+function	message(){
+alert("Logged in Successfully")	
+}
 </script>
 
 </body>

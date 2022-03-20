@@ -31,6 +31,7 @@
 
 <!-- main section started-->			
 <div id="loader">
+<img src="logo.png" height="100" width="180"><br>
 <div id="loading"></div>
 </div>
 
@@ -102,7 +103,7 @@
 <span>			
 <input type="search" placeholder="Search GetWeb...." name="q">
 &nbsp
-<img src="searchfinal.png" width="10%" height="25" id="head_serimg" onclick="myFunct()">
+<img src="searchfinal.png" width="10%" height="50%" id="head_serimg" onclick="myFunct()">
 </span>
 </div>			
 </form>
@@ -580,9 +581,9 @@ netraballabhpandey@gmail.com</span>
      <div class="col-sm-12 col-md-6 col-lg-6 col-12 mt-4 px-5 mb-5" style="box-shadow:10px 10px 50px #8f8f83;border-radius:10px;" data-aos="fade-right" data-aos-duration="500">
      	<div class="mt-4 mb-4" id="send">
      <h3 class="text-center" style="font-family:fantasy;">Send Your Email Here <span class=" fs-1" id="blinking-cursor">!</span></h3></div>
-     <form action="https://formspree.io/f/xlezdzrn" method="post" onsubmit="submit()"> <div class="mb-3 mt-3"> <label for="exampleInputEmail1" class="form-label">Email address</label> <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="_replyto"> <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> </div> <div class="mb-3"> <label for="exampleInputPassword1" class="form-label">Password</label> <input type="password" class="form-control" id="exampleInputPassword1"> </div> 
+     <form action="https://formspree.io/f/xlezdzrn" method="post" onsubmit="message()"> <div class="mb-3 mt-3"> <label for="exampleInputEmail1" class="form-label">Email address</label> <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="_replyto" required> <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> </div> <div class="mb-3"> <label for="exampleInputPassword1" class="form-label">Password</label> <input type="password" class="form-control" id="exampleInputPassword1" required> </div> 
      
- <div class="form-floating mb-3"> <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px" name="message"></textarea> <label for="floatingTextarea2">Message</label> </div>
+ <div class="form-floating mb-3"> <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px" name="message" required></textarea> <label for="floatingTextarea2">Message</label> </div>
  
  <div class="mb-3"> <button type="submit" class="btn text-white" id="con_send">Send ✉</button></div></form>
   
@@ -693,7 +694,7 @@ window.addEventListener('contextmenu', function (e) {
 setTimeout(function check(){
 document.getElementById('loader').style.display = 'flex'; },0);
 setTimeout(function check(){ 
-document.getElementById('loader').style.display = 'none'; },0000); 
+document.getElementById('loader').style.display = 'none'; },5000); 
 </script>
 
 
@@ -726,8 +727,8 @@ function scrollFunction() {
 </script>
 
 <script>
-function submit(){
-alert("Message Sended")	;
+function message(){
+alert("Message Sended Successfully")	;
 }
 </script>
 
