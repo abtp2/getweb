@@ -58,10 +58,16 @@
    <li class="nav-item"> 
    	<a class="nav-link ms-1" href="#main" id="nav_link">Components</a> </li> 
    
-   
+   <!-- tutorials -->
    <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle ms-1" href="#" id="nav_link" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Tutorials</a> <ul class="dropdown-menu" aria-labelledby="navbarDropdown" id="drop"> 
  <li><a class="dropdown-item" href="htmltut.html">HTML Tutorial</a></li>
   <li><a class="dropdown-item" href="csstut.html">CSS Tutorial</a></li>
+  <li></li> </ul> </li>
+  
+  <!-- quizes -->
+     <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle ms-1" href="#" id="nav_link" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Quizes</a> <ul class="dropdown-menu" aria-labelledby="navbarDropdown" id="drop"> 
+ <li><a class="dropdown-item" href="htmlquiz.html">HTML Quiz</a></li>
+  <li><a class="dropdown-item" href="cssquiz.html">CSS Quiz</a></li>
   <li></li> </ul> </li>
   
      	 <li class="nav-item"> 
@@ -70,9 +76,7 @@
    
    <li class="nav-item"> 
    	<a class="nav-link ms-1" href="about.html" id="nav_link">About</a> </li> 
-   	
-   	   <li class="nav-item"> 
-   	<a class="nav-link ms-1" href="https://abtp2.github.io/res6" id="nav_link">Developer</a> </li> 
+ 
    	
    </ul>
    
@@ -579,6 +583,7 @@ netraballabhpandey@gmail.com</span>
       
       
      <div class="col-sm-12 col-md-6 col-lg-6 col-12 mt-4 px-5 mb-5" style="box-shadow:10px 10px 50px #8f8f83;border-radius:10px;" data-aos="fade-right" data-aos-duration="500">
+     		
      	<div class="mt-4 mb-4" id="send">
      <h3 class="text-center" style="font-family:fantasy;">Send Your Email Here <span class=" fs-1" id="blinking-cursor">!</span></h3></div>
      <form action="https://formspree.io/f/xlezdzrn" method="post" onsubmit="message()"> <div class="mb-3 mt-3"> <label for="exampleInputEmail1" class="form-label">Email address</label> <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="_replyto" required> <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> </div> <div class="mb-3"> <label for="exampleInputPassword1" class="form-label">Password</label> <input type="password" class="form-control" id="exampleInputPassword1" required> </div> 
@@ -685,7 +690,7 @@ function myFunct() {
 
 <script>
 window.addEventListener('contextmenu', function (e) {
-  document.body.innerHTML += ' '
+  document.body.innerHTML += ''
   e.preventDefault();
 }, false);
 </script>
