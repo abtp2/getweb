@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+				<meta charset="UTF-8">
+				<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+				<title>Page title</title>
+</head>
+<body>
+<h1>Hello , write your name </h1>				
+
+<form action="certificateaccepter.html">
+<input type="text" id="text">
+<input type="submit" value="click" onclick="passvalue()">
+</form>
+
+<script>
+function passvalue(){
+				
+var first=document.getElementById("text").value;
+localStorage.setItem("textvalue",first);
+return false;
+}			
+				
+</script>
+</body>
+</html>
