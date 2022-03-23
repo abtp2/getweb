@@ -37,7 +37,10 @@
 				
 				<img src="signature.png" height="25" width="50" id="image2">
 				<h6 style="color:#8719e5;position:absolute; top:230px;right:19px;font-family: fantasy;font-size:8px;">Ashutosh Pandey</h6>		
-					<h6 style="color:#000;position:absolute; top:246px;right:16px;font-family: fantasy;font-size:5px;">Developer-GetWeb</h6>		
+					<h6 style="color:#000;position:absolute; top:246px;right:16px;font-family: fantasy;font-size:5px;">Developer(GetWeb)</h6>		
+					
+						<h6 style="color:#8719e5;position:absolute; top:230px;left:30px;font-family: fantasy;font-size:8px;">Granted on</h6>		
+					<h6 style="color:#000;position:absolute; top:246px;left:33px;font-family: fantasy;font-size:5px;" id="date"></h6>		
 				
 </center>		
 </div>
@@ -56,10 +59,10 @@ user-select:none;
 }
 @media print{ 
 body{
-Visibility:hidden 
+display:none;
 }
 #main{
-Visibility:visible;
+display:none;
 }
 }
 
@@ -79,7 +82,7 @@ bottom:150px;
 }					
 @media(max-height:570px){
 #down{
-bottom:70px;
+bottom:50px;
 }				
 }							
 #nav{
@@ -110,7 +113,7 @@ width:350px;
 height:270px;
 background:#fff;		
 border:7px solid transparent;
-border-image: linear-gradient(-45deg,#8419e5,#8419e5,#000,#8419e5,#8419e5) 30;
+border-image: linear-gradient(-45deg,#8419e5,#8419e5,#000,#8419e5,#8419e5) 30%;
 outline:5px solid #8419e5;
 outline-style:double;
 position:absolute;
@@ -169,6 +172,10 @@ letter-spacing:1.5px;
 </style>
 <script>
 document.getElementById("result")	.innerHTML=localStorage.getItem("textvalue");						
+</script>
+<script>
+let today = new Date().toLocaleDateString();
+document.getElementById("date")	.innerHTML =today
 </script>
 </body>
 </html>

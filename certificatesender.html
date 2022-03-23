@@ -6,21 +6,175 @@
 				<title>Page title</title>
 </head>
 <body>
-<h1>Hello , write your name </h1>				
+<div id="box"></div>				
+<div id="nav">
+	<center>
+			<h2 style="font-family:fantasy;">GetWeb - CERTIFICATE</h2>
+			<a href="index.html">Home</a>
+	</center>
+</div>				
 
+<!-- main div -->
+<div id="main">
+		<img src="logo.png" height="70" width="140">
+		<h3 style="font-family:fantasy;">Please Fill This Form</h3>
 <form action="certificateaccepter.html">
+				
+    <div id="main-name">
+   <font style="font-weight:800;color:#8419e5;">Name&nbsp&nbsp</font>
+    <input type="text" id="text" style="border:4px solid #8419e5;background:#fff;padding:3px;outline:none;border-radius:10px;" required></div>
+    <br>
+    <div id="main-name">
+   <font style="font-weight:800;color:#8419e5;">Ability&nbsp&nbsp</font>
+    <input type="text" id="text" style="border:4px solid #8419e5;background:#fff;padding:3px;outline:none;border-radius:10px;" placeholder="Ex:Web development"required></div>
+    <br>
+    <div id="main-name">
+   <font style="font-weight:800;color:#8419e5;">D.O.B&nbsp&nbsp&nbsp</font>
+    <input type="date" id="text" style="border:4px solid #8419e5;background:#fff;padding:3px;outline:none;border-radius:10px;" required></div>
+    <br>
+     <div id="main-name">
+   <font style="font-weight:800;color:#8419e5;">Passkey&nbsp&nbsp</font>
+    <input type="text" id="text" style="border:4px solid #8419e5;background:#fff;padding:3px;outline:none;border-radius:10px;" placeholder="Enter 'GetWeb' as passkey" pattern="[A-Za-z]{6}" title="Passkey at HTML Tutorial" required></div>
+    <br><br>
+     <center><input type="submit" value="Get Certified"         onclick="passvalue()" id="main-submit"></center>
+</form>
+</div>		
+
+
+<div id="footer">
+    <h4>Created by 
+     <a href="index.html">Get Web</a>
+     || All ©️rights reserved. </h4>
+</div>     
+<style>
+body{
+margin:0;
+background:#8419e5;
+}
+#box{
+width:100%;
+height:100vh;
+box-shadow:inset 0px 0px 30px #fff;
+position:absolute;
+}
+#nav{
+position:absolute;
+color:#fff;	
+width:100%;
+border-bottom:3px solid #fff;
+padding-bottom:10px;
+}
+#nav a{
+color:#8419e5;
+background:#fff;
+padding:8px;
+border-radius:10px;
+text-decoration:none;
+}
+#main{
+position:absolute;
+transform:translate(-50%,-50%);
+left:50%;
+top:50%;
+background:#fff;
+border:10px solid #8419e5;
+border-style:double;
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content:center;
+padding:20px 30px;
+box-shadow: 0px 0px 20px #fff;
+}
+@media print{ 
+body{
+display:none;
+}
+#main{
+display:none;
+}
+}
+@media(min-width:768px){
+#main{
+top:55%;
+}
+#box{
+box-shadow:inset 0px 0px 50px #fff;
+}
+}
+#main-name{
+display:flex;
+align-items:center;
+}
+#main-name input{
+border-style:dashed;
+}
+#main-submit{
+border:5px solid #8419e5;
+border-style:double;
+background:#fff;
+color:#8419e5;
+padding:5px 12px;
+font-size:15px;
+border-radius:10px;
+box-shadow:inset 0px 0px 4px #8419e5;
+}
+
+
+
+
+
+
+
+ #footer{
+background:#000;
+width:95%;
+height:60px;
+color:#fff;
+bottom:0;
+left:50%;
+top:95%;
+font-weight:bold;
+display:flex;
+align-items:center;
+justify-content:center;
+border-radius:20px;
+box-shadow:inset 0px 0px 30px #fff;
+font-size:12px;
+padding-left:5px;
+padding-right:5px;
+position:absolute;
+transform:translate(-50%,-50%);
+}
+
+#footer a{
+text-decoration:underline;		
+color:#fff;
+}
+@media(min-width:375px){
+#footer{
+font-size:14px;
+}				
+}
+
+@media(min-width:768px){
+#footer{
+font-size:20px;
+width:70%;
+letter-spacing:1.5px;
+}				
+}
+</style>				
+<!--  <form action="certificateaccepter.html">
 <input type="text" id="text">
 <input type="submit" value="click" onclick="passvalue()">
-</form>
-
+</form> -->
 <script>
-function passvalue(){
-				
+function passvalue(){				
 var first=document.getElementById("text").value;
 localStorage.setItem("textvalue",first);
 return false;
-}			
-				
-</script>
+}							
+</script> 
 </body>
 </html>
