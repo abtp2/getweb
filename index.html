@@ -12,7 +12,7 @@
 			<title>Get Web</title>
 			<link rel="icon" href="logo2.png">
 </head>
-<body style="background:#8419e5;" onload="check()" onclick="sound()" id="body">
+<body style="background:#8419e5;" onload="check()" onclick="sound()">
 		
 <!-- click sound -->
 <audio id="myAudio" hidden>
@@ -102,10 +102,10 @@
 			
 <br><br>
 
-<form action="" autocomplete="9ff" id="myForm" onsubmit="search()">
+
 <div class="container-fluid" id="head_search">
 <span>			
-<input type="search" placeholder="Search GetWeb...." list="ashu" id="search-form">
+<input type="search" placeholder="Search GetWeb...." list="ashu" id="search-form" onsearch="search()">
 &nbsp
 <img src="searchfinal.png" width="10%" height="50%" id="head_serimg" onclick="myFunct()">
 </span>
@@ -674,7 +674,7 @@ netraballabhpandey@gmail.com</span>
 
 </section>
 			
-<a href="#body">
+<a href="#header">
 <button onclick="topFunction()" id="myBtn" title="Go to top" style="background-image:url('up.png');background-size:60% 60%;background-position:center;background-repeat:no-repeat;transition:all 0.3s"></button></a>
 
 
