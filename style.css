@@ -8,6 +8,10 @@ html{
 scroll-behavior:smooth;
 }
 
+input::-webkit-calendar-picker-indicator { 
+display: none !important;
+}
+
 ::placeholder{
 color:#8419e5;		
 }

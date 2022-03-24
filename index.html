@@ -102,15 +102,23 @@
 			
 <br><br>
 
-<form action="https://www.google.com/search" method="GET" id="myForm">
+<form action=""  method="GET" id="myForm" onsubmit="search()">
 <div class="container-fluid" id="head_search">
 <span>			
-<input type="search" placeholder="Search GetWeb...." name="q">
+<input type="search" placeholder="Search GetWeb...." name="q" list="ashu" id="search-form">
 &nbsp
 <img src="searchfinal.png" width="10%" height="50%" id="head_serimg" onclick="myFunct()">
 </span>
 </div>			
 </form>
+
+<datalist id="ashu">
+		<option value="HTML">Tutorial</option>
+		<option value="CSS">Tutorial</option>
+		<option value="Certificate">HTML and CSS</option>
+		<option value="Color Picker">color pallette</option>
+		<option value="Online Editor">HTML , CSS and Javascript</option>
+</datalist>
 
 <br><br>
 
@@ -494,12 +502,11 @@ Click Here
 			</div>
 			
 			
-				
 			
 </div>	
 </section>
 			
-			
+	
 			
 <section id="editor">
 	<h1 class="text-center text-white pt-5">Our Front-end and Python Editor</h1>
@@ -676,6 +683,7 @@ netraballabhpandey@gmail.com</span>
 
 
 <!-- scripting section -->
+<script src="script.js"></script>
 <script>
 function sound(){
   document.getElementById("myAudio").play();
