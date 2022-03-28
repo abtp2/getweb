@@ -43,7 +43,6 @@ padding:8px 10px;
 
 #box_img img{
 width:170px;
-height:110px;
 animation:heart 1.5s linear infinite ;
 }
 
@@ -141,7 +140,6 @@ height:65vh;
 }			
 #box_img img{
 width:220px;
-height:140px;
 }
 #box_img{
 width:90%;
