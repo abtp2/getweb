@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Owl Carousel with Bootstrap 4 (Full Featured)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- TESTIMONIALS --> 
+  <section classs="testimonials">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div id="customers-testimonials" class="owl-carousel">
+
+            <!-- testimonial 1 -->
+            <div class="item">
+              <div class="shadow-effect">
+                <img class="img-circle" src="images/t-1.jpg" alt="">
+                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+              </div>
+              <div class="testimonial-name">Emmy Olivia</div>
+            </div>
+
+            <!-- testimonial 2 -->
+            <div class="item">
+              <div class="shadow-effect">
+                <img class="img-circle" src="images/t-2.jpg" alt="">
+                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+              </div>
+              <div class="testimonial-name">Ed William</div>
+            </div>
+
+            <!-- testimonial 3 -->
+            <div class="item">
+              <div class="shadow-effect">
+                <img class="img-circle" src="images/t-3.jpg" alt="">
+                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+              </div>
+              <div class="testimonial-name">Lara Sophia</div>
+            </div>
+
+            <!-- testimonial 4 -->
+            <div class="item">
+              <div class="shadow-effect">
+                <img class="img-circle" src="images/t-4.jpg" alt="">
+                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+              </div>
+              <div class="testimonial-name">Benjamin Lee</div>
+            </div>
+
+            <!-- testimonial 5 -->
+            <div class="item">
+              <div class="shadow-effect">
+                <img class="img-circle" src="images/t-5.jpg" alt="">
+                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+              </div>
+              <div class="testimonial-name">Mia Teddy</div>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+     padding:5em 0em;
+     background: #000046;
+     background: -webkit-linear-gradient(to right, #1CB5E0, #000046);
+     background: linear-gradient(to right, #1CB5E0, #000046);
+}
+.shadow-effect{
+    background:#fff;
+    padding:20px;
+    border-radius: 4px;
+    text-align: center;
+    border:1px solid #ececec;
+    box-shadow: 0 19px 38px rgba(255,255,255,0.08), 0 15px 12px rgba(255,255,255,0.08);
+} 
+#customers-testimonials .shadow-effect p{
+    font-family: inherit;
+    font-size: 17px;
+    line-height: 1.5;
+    margin:0 0 17px 0;
+    font-weight:300;
+}
+.testimonial-name{
+    margin:-17px auto 0;
+    display: table;
+    width:auto;
+    background:#3190e7;
+    padding:9px 35px;
+    border-radius: 12px;
+    text-align: center;
+    color:#fff;
+    box-shadow: 0 9px 18px rgba(0,0,0,0.12), 0 5px 7px rgba(0,0,0,0.05);
+}
+#customers-testimonials .item{
+    text-align: center;
+    padding:50px;
+    margin-bottom: 20px;
+    opacity: 0.2;
+    -webkit-transform: scale3d(0.8,0.8,1);
+    transform: scale3d(0.8,0.8,1);
+    -webkit-transition:all 0.3s ease-in-out;
+    -moz-transition:all 0.3s ease-in-out;
+    transition:all 0.3s ease-in-out;
+}
+#customers-testimonials .owl-item.active.center .item{
+    opacity: 1;
+    -webkit-transform: scale3d(1,1,1);
+    transform: scale3d(1,1,1);
+}
+.owl-carousel .owl-item img{
+    max-width:150px;
+    margin: 0 auto 17px;
+    border-radius: 6px;
+}
+
+#customers-testimonials.owl-carousel .owl-dots .owl-dot.active span,
+#customers-testimonials.owl-carousel .owl-dots .owl-dot:hover span{
+    background-color:#3190e7;
+    transform:translate3d(0px, -50%, 0px) scale(0.7);
+}
+#customers-testimonials.owl-carousel .owl-dots{
+    display: inline-block;
+    width:100%;
+    text-align:center;
+}
+
+#customers-testimonials.owl-carousel .owl-dots .owl-dot{
+    display: inline-block;
+}
+
+#customers-testimonials.owl-carousel .owl-dots .owl-dot span{
+    background: #3190e7;
+    display: inline-block;
+    height:20px;
+    margin:0 2px 5px;
+    transform:translate3d(0px, -50%, 0px) scale(0.3);
+    transform-origin: 50% 50% 0;
+    transition: all 250ms ease-out 0s;
+    width:20px;
+}
+
+  
+
+
+</style>
+<!-- END OF TESTIMONIALS -->
+
+
+
+<script>
+jQuery(document).ready(function($) {
+  "use strict";
+  //  TESTIMONIALS CAROUSEL HOOK
+  $('#customers-testimonials').owlCarousel({
+      loop: true,
+      center: true,
+      items: 3,
+      margin: 0,
+      autoplay: true,
+      dots:true,
+      autoplayTimeout: 8500,
+      smartSpeed: 450,
+      responsive: {
+        0: {
+          items: 1
+        },
+        768: {
+          items: 2
+        },
+        1170: {
+          items: 3
+        }
+      }
+  });
+});
+
+
+
+
+</script>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js" integrity="sha512-gY25nC63ddE0LcLPhxUJGFxa2GoIyA5FLym4UJqHDEMHjp8RET6Zn/SHo1sltt3WuVtqfyxECP38/daUc/WVEA==" crossorigin="anonymous"></script>
+<script type="text/javascript" src="main.js"></script>
+
+</body>
+</html>
+

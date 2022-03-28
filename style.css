@@ -204,19 +204,17 @@ animation:slidero 2s linear infinite;
 }
 
 #red:hover ~ .green{
-display:block;
-animation:sli 0.5s linear;
+
 }
 
 
 #red:hover ~ .cyan{
-display:block;
+
 }
 
 
 #red:hover ~ .blue{
-display:flex;
-animation:sli 0.2s linear;
+
 }
 
 .cyan{

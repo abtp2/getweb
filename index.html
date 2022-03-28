@@ -6,13 +6,89 @@
 			<meta name="theme-color" content="#8419e5">
 			 <link rel="shortcut icon" href="  favicosn-1.ico" type="x-icon" />
 			   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-  
+
 			<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> 
 <link rel="stylesheet" href="style.css">
 			<title>Get Web</title>
 			<link rel="icon" href="logo2.png">
 </head>
 <body style="background:#8419e5;" onload="check()" onclick="sound()">
+		
+<!-- GetWeb Pop ups box to follow-->
+<div id="pop-box">
+	<img src="file:///storage/emulated/0/Ashutosh port.html/about2.jpg" width="100" height="102" style="border-radius:100%;border: 8px solid #8419e5;border-style:double; "><a href="javascript:void(0)" id="pop-head" onclick="popclose()">×</a>
+	<h3>
+<span style="color:#8419e5;font-weight: 800;letter-spacing:1px; "><center>Ashutosh Pandey</center></span>
+
+	<p style="margin-top:2rem;padding:0px 30px;font-weight:300;font-size:18px; ">If you like this website and enjoying the features.<br>Follow Me.</p></h3>
+	<div>	
+		<a href="https://youtube.com/channel/UCLoiTyWe84H8BoKE_19qTIA" id="pop-you">Youtube</a>
+		<a href="https://github.com/abtp2" id="pop-git">Github</a>
+	</div>
+</div>
+
+
+<style>
+#pop-head{
+position:absolute;
+right:17px;
+top:12px;
+}				
+				
+#pop-box{
+width:300px;
+transform:translate(-50%,50%);
+left:50%;
+position: fixed;
+z-index:99;
+bottom:500%;
+transition:all 1s;
+background:#fff;
+display:flex;
+align-items:center;
+flex-direction:column;
+padding:10px ;
+border-radius:15px;
+border:8px solid #8419e5;
+border-style:double;
+line-height:25px;
+padding-bottom:30px;
+}
+
+#pop-box img{
+margin-top:2rem;	
+}
+
+#pop-head{
+text-decoration:none;
+padding:4px 10px;
+background:#8419e5;
+border-radius:100%;
+color:#fff;
+font-weight:bold;
+font-size:25px;
+}
+
+#pop-you{
+text-decoration:none;
+background:red;
+padding:6px 10px;
+color:#fff;
+border-radius:9px;
+font-weight:bold;
+margin-right:10px;
+}	
+
+#pop-git{
+text-decoration:none;
+background:#000003;
+padding:6px 10px;
+color:#fff;
+border-radius:9px;
+font-weight:bold;	
+}
+</style>	
+<!-- popup end -->
 		
 <!-- click sound -->
 <audio id="myAudio" hidden>
@@ -22,12 +98,13 @@
 		
 <!-- Slidebutton -->				
 <div class="slidebutton">
-			<div id="red" class="mb-2"></div>
-<div class="cyan mb-2"></div>
-<div class="blue mb-2"></div>
-<div class="green"></div>
+<div id="red" class="mb-2" onclick="dissli()"></div>
+<div class="cyan mb-2" id="cyan2" onclick="contashu()"></div>
+<div class="blue mb-2" id="blue2" onclick="devashu()"></div>
+<div class="green" id="green2" onclick="aboashu()"></div>
 </div>
 <!-- slidebutton end-->
+
 
 <!-- main section started-->			
 <div id="loader">
@@ -240,7 +317,7 @@ Click Here
 			
 			
 				<div class="col-sm-12 col-md-6 col-lg-4 col-12">
-					<div class="card mx-auto mt-5" style="width: 18rem;"> <img src="..." class="card-img-top" alt="..."> <div class="card-body"> <h5 class="card-title">Card title</h5> <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> <a href="#" class="btn btn-primary">Source Code</a> </div> </div>
+					<div class="card mx-auto mt-5" style="width: 18rem;"> <img src="c1e.jpg" class="card-img-top" alt="..."> <div class="card-body"> <h5 class="card-title">Reaponsive sticky navbar</h5> <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> <a href="c1e.txt" class="btn btn-primary">Source Code</a> </div> </div>
 			</div>
 
 
@@ -261,25 +338,25 @@ Click Here
 <div class="row">
 			
 				<div class="col-sm-12 col-md-6 col-lg-4 col-12">
-					<div class="card mx-auto mt-5" style="width: 18rem;"> <img src="..." class="card-img-top" alt="..."> <div class="card-body"> <h5 class="card-title">Card title</h5> <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> <a href="#" class="btn btn-primary">Source Code</a> </div> </div>
+					<div class="card mx-auto mt-5" style="width: 18rem;"> <img src="c2.jpg" class="card-img-top" alt="..."> <div class="card-body"> <h5 class="card-title">Sliding Carousel</h5> <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> <a href="c2.txt" class="btn btn-primary">Source Code</a> </div> </div>
 			</div>
 			
 				<div class="col-sm-12 col-md-6 col-lg-4 col-12">
-					<div class="card mx-auto mt-5" style="width: 18rem;"> <img src="..." class="card-img-top" alt="..."> <div class="card-body"> <h5 class="card-title">Card title</h5> <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> <a href="#" class="btn btn-primary">Source Code</a> </div> </div>
-			</div>
-			
-			
-				<div class="col-sm-12 col-md-6 col-lg-4 col-12">
-					<div class="card mx-auto mt-5" style="width: 18rem;"> <img src="..." class="card-img-top" alt="..."> <div class="card-body"> <h5 class="card-title">Card title</h5> <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> <a href="#" class="btn btn-primary">Source Code</a> </div> </div>
-			</div>
-			
-				<div class="col-sm-12 col-md-6 col-lg-4 col-12">
-					<div class="card mx-auto mt-5" style="width: 18rem;"> <img src="..." class="card-img-top" alt="..."> <div class="card-body"> <h5 class="card-title">Card title</h5> <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> <a href="#" class="btn btn-primary">Source Code</a> </div> </div>
+					<div class="card mx-auto mt-5" style="width: 18rem;"> <img src="c2b.jpg" class="card-img-top" alt="..."> <div class="card-body"> <h5 class="card-title">Owl Carousel</h5> <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> <a href="c2b.txt" class="btn btn-primary">Source Code</a> </div> </div>
 			</div>
 			
 			
 				<div class="col-sm-12 col-md-6 col-lg-4 col-12">
-					<div class="card mx-auto mt-5" style="width: 18rem;"> <img src="..." class="card-img-top" alt="..."> <div class="card-body"> <h5 class="card-title">Card title</h5> <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> <a href="#" class="btn btn-primary">Source Code</a> </div> </div>
+					<div class="card mx-auto mt-5" style="width: 18rem;"> <img src="c2c.jpg" class="card-img-top" alt="..."> <div class="card-body"> <h5 class="card-title">Our Team Carousel</h5> <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> <a href="c2c.txt" class="btn btn-primary">Source Code</a> </div> </div>
+			</div>
+			
+				<div class="col-sm-12 col-md-6 col-lg-4 col-12">
+					<div class="card mx-auto mt-5" style="width: 18rem;"> <img src="c2d.jpg" class="card-img-top" alt="..."> <div class="card-body"> <h5 class="card-title">Our Partners Carousel</h5> <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> <a href="c2d.txt" class="btn btn-primary">Source Code</a> </div> </div>
+			</div>
+			
+			
+				<div class="col-sm-12 col-md-6 col-lg-4 col-12">
+					<div class="card mx-auto mt-5" style="width: 18rem;"> <img src="c2e.jpg" class="card-img-top" alt="..."> <div class="card-body"> <h5 class="card-title">3D Carousel</h5> <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> <a href="c2e.txt" class="btn btn-primary">Source Code</a> </div> </div>
 			</div>
 
 
@@ -704,8 +781,6 @@ window.addEventListener('contextmenu', function (e) {
 </script>
 
 <script> 			
-setTimeout(function check(){
-document.getElementById('loader').style.display = 'flex'; },0);
 setTimeout(function check(){ 
 document.getElementById('loader').style.display = 'none'; },000); 
 </script>
@@ -744,8 +819,68 @@ function message(){
 alert("Message Sended Successfully")	;
 }
 </script>
+<script>	
+function popclose(){
+document.getElementById("pop-box").style.display = "none";
+} 
+</script>
+<script> 			
+setTimeout(function check(){ 
+document.getElementById('pop-box').style.bottom = '50%';
+ },7000); 
+</script> 
 
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script> <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script> 
 
+
+<script>
+function disnot(){
+document.getElementById("cyan2").style.display ="none";
+}
+</script>
+
+<script>
+function dissli(){
+document.getElementById("cyan2").style.display ="block";
+document.getElementById("blue2").style.display ="block";
+document.getElementById("green2").style.display ="block";
+}							
+</script> 
+
+
+
+
+<script>
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20|| document.documentElement.scrollTop > 20) {
+    document.getElementById("cyan2").style.display ="none";
+document.getElementById("blue2").style.display ="none";
+document.getElementById("green2").style.display ="none";
+  } else {
+    
+  }
+}								
+</script> 
+
+
+
+<script>
+function contashu(){
+location.href ="#contact";
+}								
+</script>
+<script>
+function devashu(){
+	location. href = "https://abtp2.github.io/res6";
+}								
+</script>
+<script>
+function aboashu(){
+	location. href = "about.html";
+}								
+</script>
 </body>
 </html>

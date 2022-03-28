@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Team Slider</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
+    <link href="https://fonts.googleapis.com/css2?family=Muli:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/style.css"> 
+</head>
+<body>
+
+<div class="container pt-130">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="text-center mb-5">
+                    <h2 class="our-team">
+                        Our Team
+                    </h2> 
+                </div> 
+            </div>  
+            <div class="testimonial_carousel_section owl-carousel owl-theme">
+                <div class="pro_1">
+                    <div class="img-area">
+                        <img src="images/profile.png" alt="">
+                    </div>
+                    <div class="w-100 d-flex align-items-center px-3 feature-details">
+                        <div class="">
+                            <p class="mb-2 feature-img">
+                                <img src="images/account-manager.png" alt="profile" title="" width="35">
+                            </p>
+                        </div>
+                        <div class="pl-3 text-left">
+                            <h2 class="text-capitalize mb-0">Afterglow</h2>
+                            <span class="profile-subTitle text-capitalize">Founder at Dribbble</span>
+                        </div>
+                    </div> 
+                </div>
+                <div class="pro_2">
+                    <div class="img-area">
+                        <img src="images/profile-1.png" alt="">
+                    </div>
+                    <div class="w-100 d-flex align-items-center px-3 feature-details">
+                        <div class="">
+                            <p class="mb-2 feature-img">
+                                <img src="images/account-manager.png" alt="profile" title="" width="35">
+                            </p>
+                        </div>
+                        <div class="pl-3 text-left">
+                            <h2 class="text-capitalize mb-0">Charles Patterson</h2>
+                            <span class="profile-subTitle text-capitalize">Founder at Dribbble</span>
+                        </div>
+                    </div> 
+                </div>
+                <div class="pro_3">
+                    <div class="img-area">
+                        <img src="images/profile-2.jpg" alt="">
+                    </div>
+                    <div class="w-100 d-flex align-items-center px-3 feature-details">
+                        <div class="">
+                            <p class="mb-2 feature-img">
+                                <img src="images/account-manager.png" alt="profile" title="" width="35">
+                            </p>
+                        </div>
+                        <div class="pl-3 text-left">
+                            <h2 class="text-capitalize mb-0">Milon Ahmed</h2>
+                            <span class="profile-subTitle text-capitalize">Founder at Dribbble</span>
+                        </div>
+                    </div> 
+                </div>
+                 <div class="pro_4">
+                    <div class="img-area">
+                        <img src="images/profile.png" alt="">
+                    </div>
+                    <div class="w-100 d-flex align-items-center px-3 feature-details">
+                        <div class="">
+                            <p class="mb-2 feature-img">
+                                <img src="images/account-manager.png" alt="profile" title="" width="35">
+                            </p>
+                        </div>
+                        <div class="pl-3 text-left">
+                            <h2 class="text-capitalize mb-0">Afterglow</h2>
+                            <span class="profile-subTitle text-capitalize">Founder at Dribbble</span>
+                        </div>
+                    </div> 
+                </div>
+                <div class="pro_5">
+                    <div class="img-area">
+                        <img src="images/profile-1.png" alt="">
+                    </div>
+                    <div class="w-100 d-flex align-items-center px-3 feature-details">
+                        <div class="">
+                            <p class="mb-2 feature-img">
+                                <img src="images/account-manager.png" alt="profile" title="" width="35">
+                            </p>
+                        </div>
+                        <div class="pl-3 text-left">
+                            <h2 class="text-capitalize mb-0">Charles Patterson</h2>
+                            <span class="profile-subTitle text-capitalize">Founder at Dribbble</span>
+                        </div>
+                    </div> 
+                </div>
+                <div class="pro_6">
+                    <div class="img-area">
+                        <img src="images/profile-2.jpg" alt="">
+                    </div>
+                    <div class="w-100 d-flex align-items-center px-3 feature-details">
+                        <div class="">
+                            <p class="mb-2 feature-img">
+                                <img src="images/account-manager.png" alt="profile" title="" width="35">
+                            </p>
+                        </div>
+                        <div class="pl-3 text-left">
+                            <h2 class="text-capitalize mb-0">Milon Ahmed</h2>
+                            <span class="profile-subTitle text-capitalize">Founder at Dribbble</span>
+                        </div>
+                    </div> 
+                </div>
+            </div> 
+        </div> 
+    </div>
+
+
+<style>
+*{
+margin:0px;
+padding:0px;
+box-sizing:border-box;
+}
+body{
+font-family: 'Muli', sans-serif;
+font-size:14px;
+font-weight:normal;
+color:#000;
+background-image: linear-gradient(60deg, #96deda 0%, #50c9c3 100%);
+background-repeat: no-repeat;
+height:100vh;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.our-team{
+font-weight:700;
+color:#fff;
+}
+
+.pro_1, .pro_2, .pro_3, 
+.pro_4, .pro_5, .pro_6{
+background-color: #fff;
+padding:8px;
+text-align:center;
+border:1px solid #f0f3fa;
+border-radius: 10px;
+}
+
+.img-area  {
+background-color: #fff;
+padding:8px;
+text-align:center;
+border:1px solid #f0f3fa;
+border-radius: 10px;
+}
+
+.owl-dots{
+text-align: center;
+}
+.owl-dot{
+display:inline-block !important;
+height:6px !important;
+width:15px !important;
+background-color: #ddd !important;
+opacity: 0.8;
+border-radius: 4px;
+margin:0px 4px;
+}
+.owl-dot.active{
+background-color:#513e8a !important;
+}
+.owl-theme .owl-dots .owl-dot span{
+display:none !important;
+}
+.owl-carousel .owl-dots.disabled, .owl-carousel .owl-nav.disabled{
+display:block !important;
+}
+.owl-carousel .owl-nav button.owl-next,
+.owl-carousel .owl-nav button.owl-prev,
+.owl-carousel button.owl-dot{
+font-size:50px;
+color:#fff !important;
+}
+.owl-prev{
+position: absolute;
+left: -50px;
+top: 50%;
+transform: translateY(-130%);
+}
+.owl-next{
+position: absolute;
+right: -50px;
+top: 50%;
+transform: translateY(-130%);
+}
+.owl-nav button:focus{
+outline:none !important;
+}
+.owl-theme .owl-nav [class*=owl-]:hover{
+background-color: transparent !important;
+color:#000 !important;
+}
+.feature-img{
+width:60px !important;
+height:60px !important;
+border-radius: 100%;
+background: #fff;
+padding: 2px;
+margin-top: -12px;
+overflow: hidden;
+}
+.feature-details h2{
+font-size: 17px;
+font-weight: bold;
+font-stretch: normal;
+font-style: normal;
+line-height: 1.2;
+letter-spacing: -0.62px;
+color: #000000;
+margin-top:2px;
+}
+.feature-details span{
+font-size: 12px;
+font-weight: bold;
+font-stretch: normal;
+font-style: normal;
+line-height: 1.92;
+letter-spacing: -0.36px;
+color: #6c6f76;
+}
+
+</style>
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/main.js"></script>
+<script>
+    $('.testimonial_carousel_section').owlCarousel({
+    loop:true,
+    margin:20, 
+    autoplay:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:2
+        },
+        1000:{
+            items:3
+        }
+    }
+})
+</script>
+</body>
+</html>
+
