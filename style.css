@@ -161,7 +161,10 @@ border:none;
 outline:none;
 }
 
-
+@media print{ 
+body{
+visibility:hidden;
+}}
 
 
 /* slidebutton  css*/

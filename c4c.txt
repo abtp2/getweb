@@ -1,0 +1,143 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Real Glassmorphism Card Hover Effects Html CSS | Glass morphism Effects</title>
+</head>
+<body>
+
+  <div class="glass-effect">
+    <h1>Glassmorphism Effect</h1>
+
+    <div class="canvas">
+      <div class="circle"></div>
+      <div class="card" id="card">
+        <img class="logo" src="images/visa.png">
+        <img class="chip" src="images/chip.png">
+        <div class="number text">3332 3323 4432 4433</div>
+        <div class="name text">Programmming</div>
+        <div class="date text">12/21</div>
+      </div>
+      <div class="circle"></div>
+    </div>
+  </div>
+ 
+
+<style>
+
+        *{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+:root{
+    --primary-color:#05103b;
+    --secondary-color:#ff3838;
+    --gray-color:#686868;
+    --white-color:#fff;
+
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center;
+  min-height: 100vh;
+  font-family: "Montserrat", sans-serif;
+  color:var(--primary-color);
+  background:var(--primary-color); 
+}
+.glass-effect h1{
+  color:var(--white-color);
+}
+.glass-effect .canvas{
+  position:relative;
+  margin-top:40px;
+}
+.glass-effect .canvas .circle{
+  position:absolute;
+  border-radius: 50%;
+}
+.glass-effect .canvas .circle:first-child{
+  width:200px;
+  height:200px;
+  right:-10%;
+  top:-10%;
+  background:linear-gradient(125deg, var(--secondary-color) 42%, var(--primary-color) 100%);
+}
+.glass-effect .canvas .circle:last-child{
+  width:130px;
+  height:130px;
+  left:-5%;
+  bottom:-20%;
+  background:linear-gradient(37deg, var(--secondary-color) 42%, var(--primary-color) 100%);
+}
+.glass-effect .canvas .card{
+  width:330px;
+  height:207px;
+  display:grid;
+  grid:1fr 1fr 1fr/1fr 1fr;
+  align-items: center;
+  position:relative;
+  z-index: 1;
+  padding:10px 20px;
+  overflow: hidden;
+  box-shadow: 0 0 20px 0 rgba(5,16,59,0.3);
+  background:linear-gradient(40deg, transparent 10%, rgba(255,255,255,0.16) 60%, transparent 100%);
+  -webkit-backdrop-filter: blur(7px);
+  backdrop-filter: blur(7px);
+  border-radius: 10px;
+  border:1.5px solid rgba(255,255,255,0.08);
+}
+.glass-effect .canvas .card .logo{
+  width:60px;
+}
+.glass-effect .canvas .card .chip{
+  width:50px;
+  justify-self: end;
+}
+.glass-effect .canvas .card .text{
+  font-weight: 500;
+  color:rgba(255,255,255,0.8);
+  background:linear-gradient(var(--white-color), var(--gray-color));
+  -webkit-background-clip:text;
+  background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+.glass-effect .canvas .card .text.number{
+  grid-column: 1/3;
+  align-self:end;
+  font-size:24px;
+  letter-spacing: 2px;
+}
+.glass-effect .canvas .card .text.name{
+  text-transform: uppercase;
+  font-size:18px;
+}
+.glass-effect .canvas .card .text.date{
+  justify-self: end;
+  font-size: 20px;
+}
+ 
+</style>
+    
+
+<script>
+const card = document.getElementById("card");
+const circles = document.querySelectorAll(".circle");
+
+document.getElementsByTagName("body")[0].addEventListener("mousemove", (e) => {
+  const x = -(e.pageX + e.currentTarget.offsetLeft);
+  const y = -(e.pageY + e.currentTarget.offsetTop);
+
+  card.style.transform = `translate3d(${x / 20}px, ${y / 20}px, 0)`;
+
+  Array.from(circles).forEach((circle) => {
+    circle.style.transform = `translate3d(${x / 50}px, ${-y / 50}px, 0)`;
+  });
+});
+</script>
+</body>
+</html>
+
+

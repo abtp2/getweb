@@ -1,0 +1,206 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Glassmorphism | Shiny Glass Social Media Icon Hover Effects</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" />
+  
+</head>
+<body>
+    <section>
+        <div class="color"></div>
+        <div class="color"></div>
+        <div class="color"></div>
+
+        <ul>
+            <li>
+                <a href="javascript:void(0);">
+                    <i class="fa fa-facebook"></i>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0);">
+                    <i class="fa fa-twitter"></i>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0);">
+                    <i class="fa fa-instagram"></i>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0);">
+                    <i class="fa fa-linkedin"></i>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0);">
+                    <i class="fa fa-whatsapp"></i>
+                </a>
+            </li>
+        </ul>
+    </section>
+     
+
+<style>
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --dark-pink-color:#ff9e9e;
+    --light-pink-color:#ff4f8b;
+    --pink-color:#ff359b;
+    --cyan-color:#00d2ff;
+    --light-cyan-color:#d1f1ff;
+}
+
+*:focus {
+    outline: 0;
+}
+
+html {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body {
+    overflow: hidden;
+}
+
+section:before{
+    backdrop-filter: blur(10px);
+    background-color:rgba(255,255,255,0.1);
+    border-top:1px solid rgba(255,255,255,0.5);
+    bottom:0;
+    content:'';
+    left:0;
+    position:absolute;
+    width:100%;
+    height:50%;
+    z-index:10;
+}
+section{
+    align-items:center;
+    background-image:linear-gradient(to bottom, var(--light-pink-color), var(--light-cyan-color));
+    display:flex;
+    height:100vh;
+    justify-content:center;
+    position: absolute;
+    width:100%;
+}
+section .color {
+    filter: blur(150px);
+    position: absolute;
+}
+
+section .color:nth-child(1) {
+    background-color: var(--dark-pink-color);
+    height: 600px;
+    top: -350px;
+    width: 600px;
+}
+
+section .color:nth-child(2) {
+    background-color: var(--pink-color);
+    bottom: -150px;
+    height: 500px;
+    left: 100px;
+    width: 500px;
+}
+
+section .color:nth-child(3) {
+    background-color: var(--cyan-color);
+    bottom: -50px;
+    height: 300px;
+    right: 0;
+    width: 300px;
+}
+
+section ul{
+    display:flex;
+    position:relative;
+}
+section ul li{
+    list-style:none;
+    margin:10px;
+    position:relative;
+}
+section ul li a::before{
+    background-color:rgba(255,255,255,0.5);
+    content:'';
+    height:100%;
+    left:0;
+    position:absolute;
+    top:0;
+    transform:skewX(45deg) translateX(150px);
+    -webkit-transform:skewX(45deg) translateX(150px);
+    -moz-transform:skewX(45deg) translateX(150px);
+    -ms-transform:skewX(45deg) translateX(150px);
+    -o-transform:skewX(45deg) translateX(150px);
+    transition:transform 0.5s ease;
+    -webkit-transition:transform 0.5s ease;
+    -moz-transition:transform 0.5s ease;
+    -ms-transition:transform 0.5s ease;
+    -o-transition:transform 0.5s ease;
+    width:50px;
+}
+section ul li a:hover:before,
+section ul li a:focus:before,
+section ul li a:active:before{
+    transform:skewX(45deg) translateX(-150px);
+    -webkit-transform:skewX(45deg) translateX(-150px);
+    -moz-transform:skewX(45deg) translateX(-150px);
+    -ms-transform:skewX(45deg) translateX(-150px);
+    -o-transform:skewX(45deg) translateX(-150px);
+}
+section ul li a{
+    align-items: center;
+    background-clip:text;
+    backdrop-filter: blur(4px);
+    background-color:rgba(255,255,255,0.1);
+    border:1px solid rgba(255,255,255,0.4);
+    border-bottom-color:rgba(255,255,255,0.2);
+    border-right-color:rgba(255,255,255,0.2);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    color:rgba(0,0,0,0);
+    display:flex;
+    font-size:2rem;
+    height:80px;
+    justify-content:center;
+    overflow:hidden;
+    position:relative;
+    text-decoration: none;
+    top:0;
+    transition:top 0.5s ease, transform 0.5s ease, z-index 0s ease;
+    -webkit-transition:top 0.5s ease, transform 0.5s ease, z-index 0s ease;
+    -moz-transition:top 0.5s ease, transform 0.5s ease, z-index 0s ease;
+    -ms-transition:top 0.5s ease, transform 0.5s ease, z-index 0s ease;
+    -o-transition:top 0.5s ease, transform 0.5s ease, z-index 0s ease;
+    transition-delay: 0.5s, 0s, 0.5s;
+    text-shadow: 0 0 1px rgba(255,255,255,0.4);
+    width:80px;
+    z-index: 1;
+}
+
+section ul li a:hover,
+section ul li a:focus,
+section ul li a:active{
+    top:-50px;
+    transform: translateY(50px);
+    -webkit-transform: translateY(50px);
+    -moz-transform: translateY(50px);
+    -ms-transform: translateY(50px);
+    -o-transform: translateY(50px);
+    transition-delay: 0s, 0.5s, 0.5s;
+    z-index: 11;
+}
+
+</style>
+</body>
+</html>
+
