@@ -17,8 +17,8 @@
 		
 <!-- popup no services-->		
 		
-<div style="position:absolute;transform:translate(-50%,50%);left:50%;top:50%;width:280px;background:#fff;display:none;align-items:center; justify-content:center;padding: 4px 7px;border-radius:10px;" id="no-ser">
-	<h5 style="color:#000;">No services Available!!! 🤕</h5>
+<div style="position:absolute;transform:translate(-50%,50%);left:50%;top:50%;width:250px;background:#fff;display:none;align-items:center; justify-content:center;padding: 4px 7px;border-radius:10px;border:2px solid #8419e5; " id="no-ser">
+	<h6 style="color:#000;">No services Available!!! 🤕</h6>
 <style>
 body:hover #no-ser{
 display:none;
@@ -33,7 +33,7 @@ display:none;
 	<h3>
 <span style="color:#8419e5;font-weight: 800;letter-spacing:1px; "><center>Ashutosh Pandey</center></span>
 
-	<p style="margin-top:2rem;padding:0px 30px;font-weight:300;font-size:18px; ">If you like this website and enjoying the features.<br>Follow Me.</p></h3>
+	<p style="margin-top:2rem;padding:0px 30px;font-weight:300;font-size:18px; ">If you like this website and enjoying the features.<br><span style="font-weight:bold;">Follow Me.</span></p></h3>
 	<div>	
 		<a href="https://youtube.com/channel/UCLoiTyWe84H8BoKE_19qTIA" id="pop-you">Youtube</a>
 		<a href="https://github.com/abtp2" id="pop-git">Github</a>
@@ -90,6 +90,8 @@ color:#fff;
 border-radius:9px;
 font-weight:bold;
 margin-right:10px;
+box-shadow:inset 2px 2px 10px #fff;
+border:1px solid red;
 }	
 
 #pop-git{
@@ -99,6 +101,8 @@ padding:6px 10px;
 color:#fff;
 border-radius:9px;
 font-weight:bold;	
+box-shadow:inset 2px 2px 10px #fff;
+border:1px solid #000003;
 }
 </style>	
 <!-- popup end -->
@@ -683,7 +687,7 @@ netraballabhpandey@gmail.com</span>
      		
      	<div class="mt-4 mb-4" id="send">
      <h3 class="text-center" style="font-family:fantasy;">Send Your Email Here <span class=" fs-1" id="blinking-cursor">!</span></h3></div>
-     <form action="https://formspree.io/f/xlezdzrn" method="post" onsubmit="message()"> <div class="mb-3 mt-3"> <label for="exampleInputEmail1" class="form-label">Email address</label> <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="_replyto" required> <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> </div> <div class="mb-3"> <label for="exampleInputPassword1" class="form-label">Password</label> <input type="password" class="form-control" id="exampleInputPassword1" required> </div> 
+     <form action="https://formspree.io/f/xlezdzrn" method="post"> <div class="mb-3 mt-3"> <label for="exampleInputEmail1" class="form-label">Email address</label> <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="_replyto" required> <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> </div> <div class="mb-3"> <label for="exampleInputPassword1" class="form-label">Password</label> <input type="password" class="form-control" id="exampleInputPassword1" required> </div> 
      
  <div class="form-floating mb-3"> <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px" name="message" required></textarea> <label for="floatingTextarea2">Message</label> </div>
  
@@ -790,7 +794,7 @@ window.addEventListener('contextmenu', function (e) {
 
 <script> 			
 setTimeout(function check(){ 
-document.getElementById('loader').style.display = 'none'; },5000); 
+document.getElementById('loader').style.display = 'none'; },9000); 
 </script>
 
 
@@ -818,6 +822,7 @@ function scrollFunction() {
     mybutton.style.display = "block";        document.getElementById("cyan2").style.display ="none";
 document.getElementById("blue2").style.display ="none";
 document.getElementById("green2").style.display ="none";
+document.getElementById("no-ser").style.display ="none";
 
   } else {
     mybutton.style.display = "none";
@@ -825,11 +830,6 @@ document.getElementById("green2").style.display ="none";
 }				
 </script>
 
-<script>
-function message(){
-alert("Message Sended Successfully")	;
-}
-</script>
 <script>	
 function popclose(){
 document.getElementById("pop-box").style.display = "none";

@@ -1,3 +1,7 @@
+body{
+overscroll-behavior: contain;				
+}
+
 #content{
 scroll-behavior:smooth;
 }

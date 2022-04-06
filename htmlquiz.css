@@ -11,6 +11,7 @@ body{
     background: #8419e5;
     overflow:hidden;
     user-select:none;
+    overscroll-behavior: contain;
 }
 
 /* div for box-shadow */

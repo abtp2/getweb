@@ -25,7 +25,7 @@
 <div id="main">
 		<img src="logo.png" height="70" width="140">
 		<h3 style="font-family:fantasy;">Please Fill This Form</h3>
-<form action="certificateaccepter.html">
+<form action="certificateaccepter.html" onsubmit="plas()">
 				
     <div id="main-name">
    <font style="font-weight:800;color:#8419e5;">Name&nbsp&nbsp</font>
@@ -41,7 +41,7 @@
     <br>
      <div id="main-name">
    <font style="font-weight:800;color:#8419e5;">Passkey&nbsp&nbsp</font>
-    <input type="text" id="text" style="border:4px solid #8419e5;background:#fff;padding:3px;outline:none;border-radius:10px;" placeholder="Enter 'GetWeb' as passkey" pattern="[A-Za-z]{6}" title="Passkey at HTML Tutorial" required></div>
+    <input type="text" id="text" style="border:4px solid #8419e5;background:#fff;padding:3px;outline:none;border-radius:10px;" placeholder="Enter 'GetWeb' as passkey" pattern="[GetWeb]{6}" title="Passkey at HTML Tutorial"  required></div>
     <br><br>
      <center><input type="submit" value="Get Certified"         onclick="passvalue()" id="main-submit"></center>
 </form>
@@ -174,6 +174,16 @@ width:70%;
 letter-spacing:1.5px;
 }				
 }
+
+
+@media(max-height:600px){
+#footer{
+display:none;
+}				
+#main{
+top:60%;
+}
+}
 </style>				
 <script>
 function passvalue(){				
@@ -187,5 +197,7 @@ function sound(){
   document.getElementById("myAudio").play();
  }
 </script>
+
+
 </body>
 </html>
