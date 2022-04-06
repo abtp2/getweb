@@ -30,7 +30,9 @@ background:#fff;
 
 body{
 overflow-x:hidden; 
-overflow-y:auto;
+overscroll-behavior: contain;
+margin:0;
+box-sizing:border-box;
 }
 
 body::-webkit-scrollbar { 
@@ -294,7 +296,7 @@ box-shadow:2px 2px 5px #8419e5;
 }
 
 #navbarSupportedContent{
-transition:all 0.1s;
+transition:all 0.3s;
 }
 
 .navbar{
