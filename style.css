@@ -33,6 +33,7 @@ overflow-x:hidden;
 overscroll-behavior: contain;
 margin:0;
 box-sizing:border-box;
+background:#8419e5;
 }
 
 body::-webkit-scrollbar { 

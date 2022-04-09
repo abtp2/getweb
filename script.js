@@ -61,9 +61,15 @@ else if (slow ==  "color picker" ) {
    location. href = "colorpick.html";
 }
 
+
+/* for nothing filling */
+else if (slow ==  "" ) {
+}
+
+
 /* no service available*/
 else{
-	alert("No services available !🤕")
+	document.getElementById("no-ser").style.display = "flex"
 }
 }
 
