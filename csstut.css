@@ -170,6 +170,35 @@ width:60%;
 }
 }
 
+
+#htm-ex2{
+width:85%;
+background: #ffffff;
+padding:7px;
+display:flex;
+flex-direction:column;
+align-items:center;
+border-radius:10px;
+border:10px double #8419e5;
+}
+#htm-ex2 img{
+width:80%;
+}
+#htm-ex2 a{
+text-decoration:none;
+color:#fff;
+background:#8419e5;
+padding:10px;
+border-radius:10px;
+}
+@media(min-width: 768px){
+#htm-ex2{
+width:40%;
+}				
+#htm-ex2 img{
+}
+}
+
 /* footer css */
 
 #footer{

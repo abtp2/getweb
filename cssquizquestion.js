@@ -2,17 +2,6 @@
 let questions = [
     {
     numb: 1,
-    question: "What does HTML stand for?",
-    answer: "Hyper Text Markup Language",
-    options: [
-      "Hyper Text Preprocessor",
-      "Hyper Text Markup Language",
-      "Hyper Text Multiple Language",
-      "Hyper Tool Multi Language"
-    ]
-  },
-    {
-    numb: 2,
     question: "What does CSS stand for?",
     answer: "Cascading Style Sheet",
     options: [
@@ -23,36 +12,47 @@ let questions = [
     ]
   },
     {
-    numb: 3,
-    question: "What does PHP stand for?",
-    answer: "Hypertext Preprocessor",
+    numb: 2,
+    question: "What CSS describes?",
+    answer: "CSS describes how HTML elements are to be displayed on screen, paper, or in other media.",
     options: [
-      "Hypertext Preprocessor",
-      "Hypertext Programming",
-      "Hypertext Preprogramming",
-      "Hometext Preprocessor"
+      "CSS describes how calculation perform on button click.",
+      "CSS describes how HTML elements are to be displayed on screen, paper, or in other media.",
+      "Both A. and B.",
+      "None of the above"
+    ]
+  },
+    {
+    numb: 3,
+    question: "What is a CSS selector?",
+    answer: "A CSS selector is the first part of a CSS Rule. It may an HTML element or pattern of elements.",
+    options: [
+      "A CSS selector is the first part of a CSS Rule. It may an HTML element or pattern of elements.",
+      "A CSS selector is the CSS class name.",
+      "A CSS selector is the set of properties that are going to be applied on HTML elements.",
+      "A CSS selector is name of CSS file."
     ]
   },
     {
     numb: 4,
-    question: "What does SQL stand for?",
-    answer: "Structured Query Language",
+    question: "In a CSS file, there is a CSS rule for paragraphs tags – what does p can be called?",
+    answer: "Selector",
     options: [
-      "Stylish Question Language",
-      "Stylesheet Query Language",
-      "Statement Question Language",
-      "Structured Query Language"
+      "Attribute",
+      "Property",
+      "Tag",
+      "Selector"
     ]
   },
     {
     numb: 5,
-    question: "What does XML stand for?",
-    answer: "eXtensible Markup Language",
+    question: "Internal styles are written within the _____ element.",
+    answer: "&ltstyle&gt…&lt/style&gt",
     options: [
-      "eXtensible Markup Language",
-      "eXecutable Multiple Language",
-      "eXTra Multi-Program Language",
-      "eXamine Multiple Language"
+      "&ltcss&gt…&lt/css&gt",
+      "&ltstylesheet&gt…&lt/stylesheet&gt",
+      " &ltstyle&gt…&lt/style&gt",
+      "Both A. and B."
     ]
   },
  // you can uncomment the below codes and make duplicate as more as you want to add question
@@ -60,62 +60,62 @@ let questions = [
 
      {
      numb: 6,
-   question: "Your Question is Here",
-  answer: "Correct answer of the question is here",
+   question: "Inline styles are written within the _____ attribute.",
+  answer: "style",
    options: [
-   "Option 1",
-     "option 2",
-      "option 3",
-       "option 4"
-     ]
+   "style",
+     "css",
+      "stylesheet",
+      "None of the above"
+           ]
    },
    
         {
      numb: 7,
-   question: "Your Question is Here",
-  answer: "Correct answer of the question is here",
+   question: "Can comments also span multiple lines?",
+  answer: "Yes",
    options: [
-   "Option 1",
-     "option 2",
-      "option 3",
-       "option 4"
+   "No",
+     "Sometimes yes or no",   
+      "Yes",
+       "None of the above"      
      ]
    },
    
    
         {
      numb: 8,
-   question: "Your Question is Here",
-  answer: "Correct answer of the question is here",
+   question: "Which property is used to define the text color?",
+  answer: "color",
    options: [
-   "Option 1",
-     "option 2",
-      "option 3",
-       "option 4"
+   "Font-color",
+     "color",
+      "text-color",
+       "Both A. and B."
      ]
    },
    
         {
      numb: 9,
-   question: "Your Question is Here",
-  answer: "Correct answer of the question is here",
+   question: "Which property is used to define the background color?",
+  answer: "background-color",
    options: [
-   "Option 1",
-     "option 2",
-      "option 3",
-       "option 4"
+   "bgcolor",
+     "back-color",
+      "bg-color",
+       "background-color"
      ]
    },
    
         {
      numb: 10,
-   question: "Your Question is Here",
-  answer: "Correct answer of the question is here",
+   question: "From the given options which is/are the valid way to represent a color?",
+  answer: "All of the above",
    options: [
-   "Option 1",
-     "option 2",
-      "option 3",
-       "option 4"
+   "A valid color name like (blue)",
+     "HEX code like (#0000ff)",
+      "RGB Value like (rgb(0,0,255))",
+       "All of the above"
      ]
    },
    

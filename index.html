@@ -922,10 +922,15 @@ function checkInternetConnection() {
   document.getElementById("off").style.display ="none";  
   } 
   else {
-     document.getElementById("off").style.display ="flex";
-       document.getElementById("on").style.display ="none"; 
-       document.getElementsByTagName("body")[0].style.background ="#fff";
+     document.getElementById("off").style.display ="none";
+       document.getElementById("on").style.display ="block"; 
+       document.getElementsByTagName("body")[0].style.background ="#8419e5";
    } }				
 </script>
+
+<!-- none = flex
+       block = none
+       #8419e5 = #fff
+ -->
 </body>
 </html>

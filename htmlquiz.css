@@ -97,7 +97,7 @@ margin-top:10px;
 }
 
 .start_btn button{
-    font-size: 25px;
+    font-size: 22px;
     font-weight: 500;
     color: #8419e5;
     padding: 15px 30px;
@@ -149,7 +149,7 @@ margin-top:10px;
 
 .info_box .info-list .info{
     margin: 5px 0;
-    font-size: 17px;
+    font-size: 15px;
 }
 
 .info_box .info-list .info span{
@@ -357,7 +357,7 @@ footer .total_que span p:first-child{
 footer button{
     height: 40px;
     padding: 0 13px;
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 400;
     cursor: pointer;
     border: none;
@@ -390,7 +390,7 @@ footer button.show{
     border-radius: 5px;
     display: flex;
     padding: 25px 30px;
-    width: 450px;
+    width:90%;
     align-items: center;
     flex-direction: column;
     justify-content: center;
@@ -400,6 +400,13 @@ footer button.show{
     transition: all 0.3s ease;
 }
 
+@media(min-width: 768px){
+.result_box{
+    width: 50%;
+   }				
+}
+
+
 .result_box .icon{
     font-size: 100px;
     color: #8419e5;
@@ -407,14 +414,14 @@ footer button.show{
 }
 
 .result_box .complete_text{
-    font-size: 20px;
+    font-size: 17px;
     font-weight: 500;
 }
 
 .result_box .score_text span{
     display: flex;
     margin: 10px 0;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 500;
 }
 
@@ -431,8 +438,8 @@ footer button.show{
 .result_box .buttons button{
     margin: 0 10px;
     height: 45px;
-    padding: 0 20px;
-    font-size: 18px;
+    padding:0px 20px;
+    font-size: 15px;
     font-weight: 500;
     cursor: pointer;
     border: none;
