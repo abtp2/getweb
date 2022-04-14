@@ -92,11 +92,11 @@ margin-left:0rem;
 }
 @media(min-width:768px){
 #nav{
-flex-direction:row;
+flex-direction:row-reverse;
 padding-top:20px;
 }				
 #nav h1{
-margin-right:2rem;
+margin-left:1.5rem;
 }
 #box{
 box-shadow:inset 0px 0px 60px #8419e5;
@@ -162,6 +162,21 @@ color:#fff;
 font-size:14px;
 }				
 }
+
+@media(max-height:500px){
+#footer{
+display:none;
+}
+#down{
+bottom:50px;
+}				
+}
+
+@media(max-height:612px){
+#down{
+bottom:65px;
+}				
+}				
 
 @media(min-width:768px){
 #footer{

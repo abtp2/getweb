@@ -7,7 +7,259 @@
 </head>
 <body>
 
+<div id="nav">
+   <h2>Developer</h2>
+   <a href="index.html">Home</a>
+</div>
 
+
+<section id="ashu">		
+<div id="hero">				
+<center>
+<div style="" id="hero-float">
+<img src="about2.jpg" width="200" height="200" style="border-radius:100%;">
+</div></center>
+
+<div id="hero_font">
+<h3>Hello , I am</h3>
+<h1 style="text-shadow:0px 0px 15px #fff;">Ashutosh  Pandey </h1>
+
+<div id="type">
+<h3>And i am a Web 
+<span id="special">Designer</span>
+</h3></div>
+
+<p style="font-weight:600;">
+<b style="font-weight:600;font-size:17px; ">	I am a founder of  GetWeb </b>
+	<br>
+	where you can get :<br> 
+    The Web Components , Web Templetes , CSS Animations , Code Editor , Tutorials etc.
+ </p>
+<a href="index.html">
+<button id="hero_btn">GetWeb</button></a>
+</div>
+
+
+
+
+</div>
+</section>
+
+<style>
+::selection {
+color:#162934;
+background:#fff;
+} 
 				
+body{
+margin:0;
+background:#8419e5;
+display:flex;
+align-items:center;
+justify-content:center;
+height:100vh;
+}				
+
+
+#nav{
+width:100%;
+height:60px;
+border-bottom:3px solid #fff;
+top:0;
+color:#fff;
+position:absolute;
+display:flex;
+align-items:center ;
+justify-content:center;
+}
+
+@media(min-width:1024px;){
+#nav{
+height:80px;
+}
+}
+
+#nav a{
+text-decoration:none;
+color:#8419e5;
+background:#fff;
+padding:8px 10px;
+border-radius:10px;
+margin-left:1rem;
+font-weight:600;
+}
+
+#hero-float{
+animation: float 3s linear infinite , rotate 10s linear infinite;		
+border-radius:1000px;
+border-bottom-left-radius: 10px;
+background:linear-gradient(45deg, #fff,#fff);
+background-size:150% 150%;
+background-repeat:no-repeat;
+padding:20px;
+width:200px;
+margin-top: 2rem;
+overflow:hidden;
+transition:all 0.3s;
+}
+
+@keyframes rotate{
+0%{
+background-position:0% 100%;
+}
+50%{
+background-position:100% 0%;
+}
+100%{
+background-position:0% 100%;
+}
+}
+
+#hero-float img{
+overflow:hidden;
+transition:all 0.3s;
+border:1px solid #fff;
+}
+
+#hero-float img:hover{
+transform:scale(1.08);
+}
+
+@keyframes float{
+0%{
+transform:translateY(0px);
+}				
+40%{
+transform:translateY(-20px);
+}				
+}
+
+#hero_font{
+color:#fff;
+margin-left:1.5rem;
+margin-top:0.5rem;
+}
+
+#hero_font h1{
+font-size:30px;		
+}
+
+#hero_font p{
+padding-right:20px;
+padding-left:3px;
+font-size:15px;
+line-height:20px;
+}
+
+#special{
+color:#fff;
+text-shadow:2px 0px 20px #fff;
+}
+
+#type{
+width:0ch;
+height:25px;
+display:flex;
+align-items:center;
+margin-bottom:1.5rem;
+overflow:hidden;
+border-right:3px solid #fff;
+white-space:nowrap;
+animation:text 3s linear infinite;
+}
+
+@keyframes text{
+0%{
+width:0ch;
+}
+35%{
+width:24.4ch;
+}
+40%{
+width:24.4ch;
+}
+45%{
+width:24.4ch;
+}
+50%{
+width:24.4ch;
+}
+70%{
+width:24.4ch;
+}
+}
+
+
+#hero{
+display:flex;
+position:absolute;
+transform:translate(-50%,-50%);
+top:54%;
+left:50%;
+flex-direction:column;
+box-shadow:0px 0px 25px #fff;
+border:5px solid #fff;
+width:87%;
+border-radius:20px;
+padding-top:0px;
+padding-bottom:10px;
+}
+
+@media(min-width:700px){
+#hero{
+display:flex;
+flex-direction:row;
+}				
+}
+
+#hero_btn{
+	background:#fff;
+	border-radius:10px;
+	border:5px double #8419e5;
+   padding:5px 10px;
+   font-weight:500;
+   color:#8419e5;
+   box-shadow:inset 0px 0px 10px #fff;
+   margin-left:0.3rem;
+}
+
+
+
+@media(min-width:1024px){
+#hero{
+border:5px solid #fff;
+box-shadow:0px 0px 50px #fff;
+border-radius:20px;
+width:70%;
+padding:20px 40px;
+position:absolute;
+left:50%;
+top:55%;
+transform:translate(-50%,-50%);
+}
+#hero_font{
+margin-top:1rem;
+margin-left:4rem;
+}
+}
+
+
+
+@media(min-width:768px){
+#hero-float{
+border-radius: 100%;
+width:230px;
+margin-top: 3rem;
+margin-left:0.8rem;
+}
+#hero-float img{
+width:230px;
+height:230px;
+}
+}
+
+
+</style>
+
 </body>
 </html>

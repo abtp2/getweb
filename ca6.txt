@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+				<meta charset="UTF-8">
+				<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+				<title>Disco Light Animation-GetWeb</title>
+</head>
+<body bgcolor="#000022">
+
+
+<div id="main">
+	<div id="box">
+				
+		
+	</div>
+</div>
+
+
+
+<style>
+#box{
+width:250px; 
+height:250px; 
+border-radius:100%;
+background:#000022;
+position:absolute;
+transform:translate(-50%,-50%);
+left:50%;
+top:50%;
+}
+
+#main{
+width:300px; 
+height:300px; 
+border-radius:100%;
+background: #red;
+position:absolute;
+transform:translate(-50%,-50%);
+left:50%;
+top:50%;
+animation:spin 1s ease infinite;
+}
+
+
+@keyframes spin{
+0%{
+background:red;		
+box-shadow:0px 0px 20px 10px red;
+}
+20%{
+background:#ff9d00;		
+}
+40%{
+background:#f8ff00;		
+}
+60%{
+background:#3bff00;		
+}
+80%{
+background:#00eaff;		
+box-shadow:0px 0px 20px 10px #00eaff;
+}
+100%{
+background:#e300ff;		
+}
+}
+
+</style>
+</body>
+</html>

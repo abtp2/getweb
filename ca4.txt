@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+				<meta charset="UTF-8">
+				<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+				<title>Hover to fill background-GetWeb</title>
+</head>
+<body>
+
+<div id="main">
+	<div id="fill"><h3>I am filled</h3></div>
+	<h3>Hover me to fill</h3>
+</div>
+
+				
+<style>
+#main{
+width:150px;
+height:50px;
+background:transparent;
+box-shadow:0px 0px 20px 8px #8419e5;
+border:5px double #fff;
+color:#8419e5;
+position:absolute;
+transform:translate(-50%,-50%);
+left:50%;
+top:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+border-radius:7px;
+}
+
+#fill{
+width:0px;
+height:50px;
+background:#8419e5;
+border-radius:7px;
+position:absolute;
+color:transparent;
+display:flex;
+align-items:center;
+justify-content:center;
+left:0;
+z-index:-1;
+transition:all 0.5s;
+}
+
+#main:hover{
+color:transparent;	
+}
+
+#main:hover #fill{
+width:150px;
+color:#fff;
+}
+</style>				
+</body>
+</html>

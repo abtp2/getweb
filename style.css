@@ -405,7 +405,7 @@ height:38px;
 overflow:hidden;
 white-space:nowrap;
 border-right: solid 4px #fff;
-animation:write 3s infinite steps(900000) , bli 1.5s ease infinite;
+animation:write 3s infinite steps(900000) , bli 0.8s ease infinite;
 }
 
 @keyframes write {
@@ -496,23 +496,12 @@ padding-top:7rem;
 0%{
 border-right-color:#8419e5;
 }
-
-20%{
+33.33%{
 border-right-color:#fff;
 }
-
-40%{
+66.66%{
 border-right-color:#8419e5;
 }
-
-60%{
-border-right-color:#fff;
-}
-
-80%{
-border-right-color:#8419e5;
-}
-
 100%{
 border-right-color:#fff;
 }
@@ -619,8 +608,8 @@ width:80%;
 
 /* hero css */
 
-#hero card{
-box-shadow:2px 2px 5px #000;
+#hero .card{
+box-shadow:5px 5px 30px #000;
 }
 
 #hero{
@@ -628,7 +617,6 @@ background:#8419e5;
 border-top-radius:50px;
 border-top-left-radius:70px;
 border-top-right-radius:70px;
-padding:50px;
 }
 
 
@@ -637,15 +625,10 @@ color:#fff;
 }
 
 
-card{
-border-radius:20px;
-}
-
 
 /* main css */
 #main{
 background:#000;
-padding:50px;
 border-top-left-radius:70px;
 border-top-right-radius:70px;
 }
@@ -658,7 +641,7 @@ color:#fff;
 
 
 #main .card{
-box-shadow:10px 10px 10px #8419e5;
+box-shadow:5px 5px 20px #8419e5;
 }
 
 
