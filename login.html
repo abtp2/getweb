@@ -10,12 +10,24 @@
 <body onclick="sound()">
 
 
-
+<!-- popup-1st-->
 <div style="position:absolute;transform: translate(-50%,50%);left:50%;background:#fff;padding:15px 20px;width:300px;z-index: 9999999;display: flex; flex-direction: column; align-items: center; justify-content: center;border: 5px solid #8419e5; border-style: double;bottom: 500%;box-shadow: inset 0px 0px 10px #8419e5;transition: all 1s;" id="pop-box">
 	<h2 style="color:#8719e5;font-family: fantasy; ">GetWeb :</h2>
 	<hr style="height:5px;background-color: #8419e5;width:100%;">  
 	<br>
 	<h3><span id="user-name"></span>You Are Successfully Logged In </h3>
+	<br>
+	<a href="index.html"><button style="background:#8419e5; color:#fff;font-weight: bold;padding:5px 10px;border:none; ">Ok</button></a>
+</div>
+
+
+
+<!-- popup-2st-->
+<div style="position:absolute;transform: translate(-50%,50%);left:50%;background:#fff;padding:15px 20px;width:300px;z-index: 9999999;display: flex; flex-direction: column; align-items: center; justify-content: center;border: 5px solid #8419e5; border-style: double;bottom: 500%;box-shadow: inset 0px 0px 10px #8419e5;transition: all 1s;" id="pop-box2">
+	<h2 style="color:#8719e5;font-family: fantasy; ">GetWeb :</h2>
+	<hr style="height:5px;background-color: #8419e5;width:100%;">  
+	<br>
+	<h3><span id="user-name2"></span>You Are Successfully Signed In </h3>
 	<br>
 	<a href="index.html"><button style="background:#8419e5; color:#fff;font-weight: bold;padding:5px 10px;border:none; ">Ok</button></a>
 </div>
@@ -71,11 +83,11 @@
       </div>
         <div class="signup-form">
           <div class="title">Signup</div>
-        <form action="#">
+        <form action="javascript: void(0)" onsubmit="simessage()">
             <div class="input-boxes">
               <div class="input-box">
                 <i class="fas fa-user"></i>
-                <input type="text" placeholder="Enter your name" required>
+                <input type="text" placeholder="Enter your name" id="user-off2" required>
               </div>
               <div class="input-box">
                 <i class="fas fa-envelope"></i>
@@ -330,6 +342,14 @@ function	message(){
 document.getElementById('pop-box').style.bottom = '50%';
 var x = document.getElementById("user-off").value; 
 document.getElementById("user-name")	.innerHTML=x + "," 
+}
+</script>
+
+<script>
+function	simessage(){
+document.getElementById('pop-box2').style.bottom = '50%';
+var x = document.getElementById("user-off2").value; 
+document.getElementById("user-name2")	.innerHTML=x + "," 
 }
 </script>
 </body>

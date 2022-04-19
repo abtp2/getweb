@@ -40,13 +40,13 @@ else if (slow ==  "CERTIFICATE" ) {
 
 /* for editor */
 else if (slow ==  "Online Editor" ) {
-   location. href = "#editor";
+   location. href = "editor.html";
 }
 else if (slow ==  "online editor" ) {
-   location. href = "#editor";
+   location. href = "editor.html";
 }
 else if (slow ==  "ONLINE EDITOR" ) {
-   location. href = "#editor";
+   location. href = "editor.html";
 }
 
 

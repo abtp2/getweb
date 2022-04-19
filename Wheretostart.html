@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+				<meta charset="UTF-8">
+				<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+				<title>Where to start</title>
+</head>
+<body>
+
+
+
+<!-- small devices -->
+<section id="small">								
+<div id="nav">
+<h1 style="font-size: 26px">Where to start</h1>	
+<a href="index.html">Home</a>
+</div>				
+<div id="side-bar"></div>
+
+
+
+
+<section id="main">
+<div id="html-div" class="card">
+	<img src="html.png" height="160" width="160">
+	<h3>
+		1. Create your first web page.
+		<br><br>		
+	<font size="3">
+The first thing you have to learn, is HTML, which is the standard markup language for creating web pages.
+	</h3>
+	<a href="htmltut.html" id="btn">Learn HTML</a>
+</div>
+
+
+
+<div id="css-div" class="card">
+	<img src="css.png" height="160" width="160">
+	<h3>
+	2. Style your web page
+		<br><br>		
+	<font size="3">
+The next step is to learn CSS, to set the layout of your web page with beautiful colors, fonts, and much more.
+	</h3>
+	<a href="csstut.html" id="btn">Learn CSS</a>
+
+</div>
+
+
+
+
+<div id="js-div" class="card">
+	<img src="javascript.png" height="145" width="145">
+	<h3>
+3. Make your web page interactive
+		<br><br>		
+	<font size="3">
+After studying HTML and CSS, you should learn JavaScript to create dynamic and interactive web pages for your users.
+	</h3>
+	<a href="htmltut.html" id="btn">Learn JS</a>o
+</div>
+
+
+
+
+</section>
+<br><br><br><br>
+
+
+
+
+
+
+
+
+<style>
+body{
+margin:0;
+background:#8419e5;
+}
+
+#nav{
+background:#8419e5;
+position:fixed;
+top:0;
+display:flex;
+z-index:999999999;
+flex-direction:column;
+align-items:center;
+justify-content:center;
+width:100%;
+height:85px;
+padding-bottom:10px;
+margin:0;
+border-bottom:5px solid #fff;
+}
+
+@media(min-width: 768px){
+#nav{
+display:flex;
+flex-direction:row;
+padding-bottom:0px;
+height:90px;
+}				
+#nav h1{
+margin-right:1rem;
+}
+}
+
+#nav h1{
+color:#ffffff;
+position:absolute;
+top:0px;
+}
+
+#nav a{
+position:absolute;
+top:55px;
+background:#fff;	
+padding:7px 10px;
+border-radius:10px;
+text-decoration:none;
+color: #8419e5;
+font-weight: bold;
+}
+#side-bar{
+width:15px;
+height:1300px;
+position:absolute;
+left:30px;
+margin-top:0.5rem;
+background:#fff;
+border-radius:200px;
+}
+	
+@media(max-width: 400px){
+#side-bar{
+left:20px;
+}				
+.card{
+position:absolute;
+left:60px;
+transform:scale(0.9);
+}
+}
+
+
+@media(max-width:350px) and (min-width: 320px){
+#side-bar{
+left:15px;
+}				
+.card{
+position:absolute;
+left:30px;
+transform:scale(0.89);
+}
+}
+	
+#html-div{
+background:#fff;
+width:15rem;
+position:absolute;
+margin-top:2rem;
+padding-top:10px;
+padding-left:17px;
+padding-right:17px;
+padding-bottom:20px;
+border-radius:20px;
+border-top-left-radius:0px;
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content:center;
+}
+
+#html-div img{
+border-bottom:3px solid #8419e5;
+}
+
+
+
+#css-div{
+background:#fff;
+width:15rem;
+position:absolute;
+margin-top:30rem;
+padding-top:10px;
+padding-left:17px;
+padding-right:17px;
+padding-bottom:20px;
+border-radius:20px;
+border-top-left-radius:0px;
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content:center;
+}
+
+#css-div img{
+border-bottom:3px solid #8419e5;
+}
+
+
+
+
+#js-div{
+background:#fff;
+width:15rem;
+position:absolute;
+margin-top:58em;
+padding-top:10px;
+padding-left:17px;
+padding-right:17px;
+padding-bottom:20px;
+border-radius:20px;
+border-top-left-radius:0px;
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content:center;
+}
+
+#js-div img{
+border-bottom:3px solid #8419e5;
+}
+
+	
+.card{
+box-shadow:0px 0px 20px #fff;
+border:7px double #8419e5;
+right:40px;
+}	
+
+.card img{
+transition:all 0.3s;
+}
+.card img:hover{
+transform:scale(1.1);
+}
+
+#main{
+margin-top:7rem;
+}
+
+#btn{
+background:#8419e5;
+color:#fff;
+font-weight:550;
+padding:8px 10px;
+border-radius:10px;
+text-decoration:none;
+font-size:15px;
+}
+
+font{
+font-weight:400;
+}
+</style>
+</section>
+
+
+
+
+
+
+
+
+
+
+<!-- big devices -->
+<section id="large">
+<div id="nav">
+<h1 style="font-size: 26px">Where to start</h1>	
+<a href="index.html">Home</a>
+</div>								
+<div id="bar"></div>
+				
+
+
+<div id="img-holder">
+		<img src="html.png" height="150" width="150" style="margin-top:9rem;">
+		<img src="css.png" height="150" width="150">
+		<img src="javascript.png" height="150" width="150">
+</div>
+
+
+
+<div id="cont-holder">	
+	<div id="htm" class="card2">
+			<h3>
+		1. Create your first web page.
+		<br><br>		
+	<font size="3">
+The first thing you have to learn, is HTML, which is the standard markup language for creating web pages.
+	</h3>
+	<a href="htmltut.html" id="btn">Learn HTML</a>
+	</div>
+					
+	
+	<div id="cs" class="card2">
+		<h3>
+	2. Style your web page
+		<br><br>		
+	<font size="3">
+The next step is to learn CSS, to set the layout of your web page with beautiful colors, fonts, and much more.
+	</h3>
+	<a href="csstut.html" id="btn">Learn CSS</a>
+	</div>
+					
+			
+		<div id="j" class="card2">
+					<h3>
+3. Make your web page interactive
+		<br><br>		
+	<font size="3">
+After studying HTML and CSS, you should learn JavaScript to create dynamic and interactive web pages for your users.
+	</h3>
+	<a href="htmltut.html" id="btn">Learn JS</a>
+			</div>							
+</div>
+
+
+
+
+
+
+<style>
+body{
+margin:0;
+background:#8419e5;
+}
+
+#nav{
+background:#8419e5;
+position:fixed;
+top:0;
+display:flex;
+z-index:999999999;
+flex-direction:column;
+align-items:center;
+justify-content:center;
+width:100%;
+height:85px;
+padding-bottom:10px;
+margin:0;
+border-bottom:5px solid #fff;
+}
+
+@media(min-width:480px){
+#nav{
+display:flex;
+flex-direction:row;
+padding-bottom:0px;
+height:100px;
+}				
+#nav h1{
+margin-right:1rem;
+}
+}
+
+#nav h1{
+color:#ffffff;
+position:absolute;
+top:0px;
+}
+
+#nav a{
+position:absolute;
+top:55px;
+background:#fff;	
+padding:7px 10px;
+border-radius:10px;
+text-decoration:none;
+color: #8419e5;
+font-weight: bold;
+}		
+
+
+#bar{
+width:15px;
+height:800px;
+background:#fff;
+border-radius:20px;
+position:absolute;
+top:9rem;
+left:50%;
+transform:translateX(-50%);
+}
+
+
+#img-holder{
+display:flex;
+flex-direction:column;
+position:absolute;
+left:150px;
+}
+
+
+@media(max-width:1000px){
+#img-holder{
+left:120px;
+}	
+}
+
+@media(max-width:760px){
+#img-holder{
+left:60px;
+}	
+}
+
+@media(max-width:600px){
+#img-holder{
+left:40px;
+}	
+}
+
+
+@media(min-width:800px){
+#img-holder img{
+width:200px;
+height:200px;
+padding:20px 30px;
+}
+}
+
+#img-holder img{
+background:#fff;
+padding:20px;
+border-radius:10px;
+margin-top:2rem;
+border:8px double #8419e5;
+box-shadow:0px 0px 20px #fff;
+}
+
+
+#cont-holder{
+width:25%;
+height:100vh;
+position:absolute;
+display:flex;
+flex-direction:column;
+align-items:center;
+top:9rem;
+right:100px;
+}
+
+@media(max-width:1024px){
+#cont-holder{
+right:80px;
+}
+}
+
+#htm{
+padding:20px 30px; 
+background:#fff;
+border-radius:10px;
+}
+
+#cs{
+padding:20px 30px;
+background:#fff;
+margin-top:2.5rem;
+border-radius:10px;
+}
+
+#j{
+padding:20px 30px;
+background:#fff;
+margin-top:2.5rem;
+border-radius:10px;
+}
+
+.card2{
+border:8px double #8419e5;
+box-shadow:0px 0px 20px #fff;		
+}
+</style>				
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style>
+#large{
+display:none;
+}
+
+@media(min-width:480px){
+#small{
+display:none;
+}				
+#large{
+display:block;
+}
+}
+</style>
+
+</body>
+</html>
