@@ -15,7 +15,10 @@
 <h1 style="font-size: 26px">Where to start</h1>	
 <a href="index.html">Home</a>
 </div>				
-<div id="side-bar"></div>
+<div id="side-bar"><span id="p1">●</span>
+<span id="p2">●</span>
+<span id="p3">●</span>
+</div>
 
 
 
@@ -57,7 +60,7 @@ The next step is to learn CSS, to set the layout of your web page with beautiful
 	<font size="3">
 After studying HTML and CSS, you should learn JavaScript to create dynamic and interactive web pages for your users.
 	</h3>
-	<a href="htmltut.html" id="btn">Learn JS</a>o
+	<a href="htmltut.html" id="btn">Learn JS</a>
 </div>
 
 
@@ -131,7 +134,38 @@ left:30px;
 margin-top:0.5rem;
 background:#fff;
 border-radius:200px;
+color:#8419e5;
+font-size:20px;
+display:flex;
+flex-direction:column;
+align-items:center;
 }
+
+#p1{
+position:absolute; 
+top:120px;
+border:3px solid #8419e5;
+border-radius:100px;
+background:#fff;
+}
+
+#p2{
+position:absolute; 
+top:50%;
+transform:translateY(-50%);
+border:3px solid #8419e5;
+border-radius:100px;
+background:#fff;
+}
+
+#p3{
+position:absolute; 
+bottom:150px;
+border:3px solid #8419e5;
+border-radius:100px;
+background:#fff;
+}
+
 	
 @media(max-width: 400px){
 #side-bar{
@@ -273,7 +307,9 @@ font-weight:400;
 <h1 style="font-size: 26px">Where to start</h1>	
 <a href="index.html">Home</a>
 </div>								
-<div id="bar"></div>
+<div id="bar"><span id="p1">●</span>
+<span id="p2">●</span>
+<span id="p3">●</span></div>
 				
 
 
@@ -378,13 +414,18 @@ font-weight: bold;
 
 #bar{
 width:15px;
-height:800px;
+height:850px;
 background:#fff;
 border-radius:20px;
 position:absolute;
 top:9rem;
 left:50%;
 transform:translateX(-50%);
+color:#8419e5;
+font-size:22px;
+display:flex;
+flex-direction:column;
+align-items:center;
 }
 
 
@@ -432,9 +473,17 @@ border:8px double #8419e5;
 box-shadow:0px 0px 20px #fff;
 }
 
+#img-holder img{
+transition:all 0.3s;
+}
+
+
+#img-holder img:hover{
+transform:scale(1.07);
+}
 
 #cont-holder{
-width:25%;
+width:300px;
 height:100vh;
 position:absolute;
 display:flex;
@@ -444,11 +493,12 @@ top:9rem;
 right:100px;
 }
 
-@media(max-width:1024px){
+@media(max-width:800px){
 #cont-holder{
-right:80px;
+right:40px;
 }
 }
+
 
 #htm{
 padding:20px 30px; 
@@ -459,20 +509,25 @@ border-radius:10px;
 #cs{
 padding:20px 30px;
 background:#fff;
-margin-top:2.5rem;
+margin-top:2rem;
 border-radius:10px;
 }
 
 #j{
 padding:20px 30px;
 background:#fff;
-margin-top:2.5rem;
+margin-top:2rem;
 border-radius:10px;
 }
 
 .card2{
 border:8px double #8419e5;
 box-shadow:0px 0px 20px #fff;		
+transition:all 0.3s;
+}
+
+.card2:hover{
+transform:scale(1.08);
 }
 </style>				
 </section>
