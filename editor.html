@@ -11,15 +11,15 @@
 
 <div id="main">			
 <div id="bar1">
-<textarea id="html" placeholder="write HTML here....">
+<textarea id="html" placeholder="write code here....">
 <!DOCTYPE html>
 <html>
 <head>
 <title></title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 </head>
 <body bgcolor="#fff" style="color:#000;padding:10px;">
- <h2>Hello ,</h2>
- <h4>This is a HTML editor 😀</h4>
+ <h2>Hello,This is a HTML editor 😀</h2>
 </body>
 </html>
 				
@@ -68,6 +68,9 @@ margin-bottom:5px;
 #html{
 background:#fff;
 color:#000;
+line-height:21px;
+letter-spacing:0.8px;
+font-weight:500;
 }
 
 #bar1 textarea{
@@ -77,7 +80,6 @@ outline:none;
 border:none;
 padding:10px;
 border-radius:10px;
-line-height:20px;
 }
 
 @media(min-width:1024px){
@@ -138,8 +140,6 @@ position:absolute;
 right:12px;
 }
 
-
-
 @media(min-width:600px){
 #nav{
 width:100%;
@@ -147,7 +147,7 @@ display:flex;
 align-items:center;
 justify-content:center;
 position:absolute;
-top:10px;
+padding-top:30px;
 }
 #nav h1{
 font-size:30px
@@ -209,7 +209,8 @@ height:25px;
 border-radius:20px;
 display:flex;
 align-items:center;
-padding-bottom:2.5px;
+padding-bottom:4px;
+padding-inline:1px;
 text-shadow:0px  0px  0px;
 justify-content:flex-start;
 font-size:23px;
@@ -219,6 +220,12 @@ position:absolute;
 left:15px;
 }
 
+
+@media(max-height:450px){
+#nav{
+padding-top:0px;
+}				
+}
 </style>
 
 

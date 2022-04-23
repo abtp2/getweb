@@ -13,7 +13,7 @@ function get(){
      x.style.color = "#8419e5";
      y.style.background  = "#fff";
      y.style.color = "#000";
-     
+    
   } else {
    x.style.justifyContent = "flex-end";
    x.style.background = "#000";
