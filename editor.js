@@ -6,6 +6,9 @@ document.querySelector("button").onclick = function() { code.open(); code.writel
 function get(){
   const  x = document.getElementById("check");
   const  y = document.getElementById("html");
+  const  z = document.getElementById("css");
+   const  a = document.getElementById("js");
+   const  b = document.getElementById("btn");
 
   if (x.style.justifyContent === "flex-end") {
     x.style.justifyContent = "flex-start";
@@ -13,6 +16,12 @@ function get(){
      x.style.color = "#8419e5";
      y.style.background  = "#fff";
      y.style.color = "#000";
+     z.style.background  = "#fff";
+     z.style.color = "#000";
+     a.style.background  = "#fff";
+     a.style.color = "#000";
+     b.style.border= "2.5px solid #fff"
+     b.style.background= "#fff";
     
   } else {
    x.style.justifyContent = "flex-end";
@@ -20,5 +29,31 @@ function get(){
      x.style.color = "#fff"; 
      y.style.background  = "#000";
      y.style.color = "#fff";
+     z.style.background  = "#000";
+     z.style.color = "#fff";
+     a.style.background  = "#000";
+     a.style.color = "#fff";
+     b.style.border= "2.5px solid #000"
+      b.style.background= "#000";
   }
+}
+
+
+
+function first(){
+document.getElementById("html").style.display ="block";
+document.getElementById("css").style.display ="none";
+document.getElementById("js").style.display ="none";
+}
+
+function second(){
+document.getElementById("html").style.display ="none";
+document.getElementById("css").style.display ="block";
+document.getElementById("js").style.display ="none";
+}
+
+function third(){
+document.getElementById("html").style.display ="none";
+document.getElementById("css").style.display ="none";
+document.getElementById("js").style.display ="block";
 }
