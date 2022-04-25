@@ -17,13 +17,13 @@
 
 <!-- Offline box -->
 	<center>
-<div style="width:300px; height: 200px;position:absolute;transform: translate(-50%,-50%);top:50%;left:50%;background: #8419e5;box-shadow: inset 0px 0px 10px #fff;border: 5px double #fff;display:none;flex-direction:column;align-items: center;justify-content:center;padding:10px;border-radius: 10px;" id="off">
-			<br>
+<div style="width:300px; height: 200px;position:absolute;transform: translate(-50%,-50%);top:50%;left:50%;background: #8419e5;box-shadow: inset 0px 0px 10px #fff;border: 5px double #fff;display:none;flex-direction:column;align-items: center;justify-content:center;border-radius: 10px;padding:10px;" id="off">
+		
 	<h3 style="color:#fff;text-shadow: 0px 0px 10px #fff;">YOU ARE OFFLINE !</h3>
 
 	<h6 style="color:#fff;">Please connect to internet and try again.</h6>
 	<br>
-	<a href="index.html" style="text-decoration:none; background:#fff;color:#8419e5;border:5px double #8419e5;border-radius:10px;padding:5px  5px;">Refresh</a>
+	<a href="index.html" style="text-decoration:none; background:#fff;color:#8419e5;border:5px double #8419e5;border-radius:10px;padding:4px  8px;">Refresh</a>
 </div>
 </center>
 <!-- Offline box complete-->
@@ -934,9 +934,9 @@ function checkInternetConnection() {
   document.getElementById("off").style.display ="none";  
   } 
   else {
-     document.getElementById("off").style.display ="none";
-       document.getElementById("on").style.display ="block"; 
-       document.getElementsByTagName("body")[0].style.background ="#8419e5";
+     document.getElementById("off").style.display ="flex";
+       document.getElementById("on").style.display ="none"; 
+       document.getElementsByTagName("body")[0].style.background ="#fff";
    } }				
 </script>
 
