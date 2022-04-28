@@ -16,32 +16,132 @@
 
 
 <!-- Offline box -->
-	<center>
-<div style="width:300px; height: 200px;position:absolute;transform: translate(-50%,-50%);top:50%;left:50%;background: #8419e5;box-shadow: inset 0px 0px 10px #fff;border: 5px double #fff;display:none;flex-direction:column;align-items: center;justify-content:center;border-radius: 10px;padding:10px;" id="off">
-		
-	<h3 style="color:#fff;text-shadow: 0px 0px 10px #fff;">YOU ARE OFFLINE !</h3>
+<center>
+<div id="off">
+				<svg xmlns="http://www.w3.org/2000/svg" width="245" height="235" style="transform:scale(0.35) translateY(-50%);top:0%;">
+<path style="fill:#8419e5; stroke:none;" d="M0 0L0 256L256 256L256 0L0 0z"/>
+<path style="fill:#f4ac25; stroke:none;" d="M70 45L70 46L187 46C180.611 37.7274 168.688 34.6055 159 31.8596C128.432 23.1956 96.9318 28.7873 70 45z"/>
+<path style="fill:#5bbcd4; stroke:none;" d="M187 45L188 46L187 45M21 48L24 47L21 48z"/>
+<path style="fill:#47609d; stroke:none;" d="M21 149L111 149C121.321 149 139.395 145.474 148.852 149.603C153.728 151.732 153.256 167.593 151.397 171.852C149.671 175.803 144.502 174.871 141 175.285C132.044 176.346 123.016 175.999 114 176C111.197 176 106.025 175.082 104.028 177.603C101.447 180.861 103 189.031 103 193L142 194L141 176L151.397 174.972L153 166L153 141L71 141L31 142C27.1656 121.346 30 97.9942 30 77C30 71.8987 27.7482 59.4586 31.6034 55.6034C34.0292 53.1776 38.8992 54.0002 42 54L70 54L170 54C177.449 54 198.884 50.3462 204.397 55.7423C208.25 59.5144 206 71.9614 206 77L206 136L215 136L215 71C215 65.4597 217.449 51.9332 213.258 47.7423C210.635 45.1199 205.351 46.0002 202 46L171 46L61 46L33 46C29.8313 46.0012 25.1002 45.2981 22.6034 47.7423C18.2044 52.0485 21 68.1424 21 74L21 149z"/>
+<path style="fill:#5bbcd4; stroke:none;" d="M212 46L213 47L212 46M214 48L215 49L214 48M20 49L20 150L21 150L21 80L20 49M30 55L30 56C47.8208 51.7572 69.6924 55 88 55L204 55C191.83 49.8934 170.253 54 157 54L71 54C58.2889 54 42.1963 51.395 30 55z"/>
+<path style="fill:#f9fcfc; stroke:none;" d="M30 140L152 140C154.876 134.784 160.705 136 166 136L194 136C196.858 136 202.003 136.932 204.382 134.972C207.395 132.489 205 118.941 205 115L205 55L74 55L42 55L31.0278 56.6034L30 79L30 140z"/>
+<path style="fill:#5bbcd4; stroke:none;" d="M205 55L205 131L206 131L206 79L205 55M107 74L120 74L120 62C108.526 61.7632 107 61.8476 107 74z"/>
+<path style="fill:#f4ac25; stroke:none;" d="M168.043 61.8773C162.029 62.7341 163.991 70.5953 169.896 69.8326C175.832 69.0657 173.696 61.0721 168.043 61.8773M197 62C179.538 61.0433 196.807 78.3288 197 62z"/>
+<path style="fill:#5bbcd4; stroke:none;" d="M37.6034 63.0278C30.2909 68.8194 41.2084 79.8516 48.2438 73.9722C55.1308 68.2169 44.5378 57.5356 37.6034 63.0278z"/>
+<path style="fill:#47609d; stroke:none;" d="M108 64L111 63L108 64z"/>
+<path style="fill:#f4ac25; stroke:none;" d="M185 62C167.653 62.0613 184.814 77.6633 185 62z"/>
+<path style="fill:#47609d; stroke:none;" d="M37 66L38 66L40 64C37.8603 62.8822 37.4732 63.7492 37 66M108 65L110 73L108 65z"/>
+<path style="fill:#5bbcd4; stroke:none;" d="M53.6227 67.0239C49.7536 70.1539 56.7313 73.0974 59.5733 70.9761C63.4965 68.0477 56.4554 64.7324 53.6227 67.0239M68.3225 66.7431C63.4089 69.0992 70.2198 73.0928 73.5471 71.3935C78.0707 69.0832 71.5725 65.1846 68.3225 66.7431M82.6227 67.027C78.8507 70.0349 85.5532 73.2123 88.3773 70.9869C92.0836 68.0664 85.3591 64.8449 82.6227 67.027M96.6227 67.0239C92.8732 70.0592 99.5671 73.2509 102.377 70.9761C106.127 67.9408 99.4328 64.7491 96.6227 67.0239z"/>
+<path style="fill:#47609d; stroke:none;" d="M37 68C37.0135 71.1942 36.5972 73.2708 40 74L37 68z"/>
+<path style="fill:#5bbcd4; stroke:none;" d="M215 70L215 73L216 73L215 70z"/>
+<path style="fill:#f4ac25; stroke:none;" d="M215 73L215 114L215.318 132.867L223.682 142.019L225 164C238.332 145.56 235.454 115.21 228.644 95C226.112 87.4834 222.388 76.7746 215 73M126 75L126 108C141.533 110.884 160.046 108 176 108C181.308 108 190.771 109.83 195.566 107.397C199.87 105.212 199.94 79.007 196.258 76.0278C192.504 72.9911 181.637 75 177 75L126 75z"/>
+<path style="fill:#5bbcd4; stroke:none;" d="M51.6034 78.0278C46.9713 81.6965 49.9884 101.347 50 107C50.005 109.42 49.4355 113.255 51.6034 114.972C54.2154 117.041 59.8846 116.009 63 115.999C73.2159 115.966 83.8325 116.75 94 115.831C96.7399 115.583 102.278 116.201 104.397 114.307C108.996 110.195 106.012 91.8853 106 86C105.995 83.5803 106.564 79.7448 104.397 78.0278C101.615 75.8249 95.3281 77 92 77L63 77C59.8785 77 54.2214 75.9543 51.6034 78.0278M40.5849 79.0864C37.869 81.0141 39.9542 87.7051 43.4159 85.6728C46.4952 83.8651 44.1592 76.5495 40.5849 79.0864M117 78C105.856 78.8683 116.945 93.4561 117 78M40.5841 92.0864C37.7083 94.1108 39.7255 101.511 43.4159 98.9136C46.2917 96.8892 44.2745 89.4886 40.5841 92.0864M112.584 92.0864C109.708 94.1108 111.726 101.511 115.416 98.9136C118.292 96.8892 116.274 89.4886 112.584 92.0864M45 105C33.8561 105.868 44.9454 120.456 45 105M117 105C105.856 105.868 116.945 120.456 117 105M37.6034 118.028C30.306 123.807 41.2908 134.988 48.2184 128.972C54.8071 123.251 44.5775 112.504 37.6034 118.028M108.603 118.028C101.79 123.423 111.238 134.642 118.397 128.972C125.192 123.59 115.655 112.443 108.603 118.028z"/>
+<path style="fill:#47609d; stroke:none;" d="M38 118C36.6959 121.567 35.3471 128.003 40 129L40 119L38 118M108 118L109 119L108 118z"/>
+<path style="fill:#5bbcd4; stroke:none;" d="M69.152 120.901C63.6211 122.859 69.7935 127.31 73.6628 125.4C78.0015 123.258 72.035 119.881 69.152 120.901M81 121C82.0437 127.254 88.9563 127.254 90 121L81 121M100.852 121.046C97.4221 120.25 93.4493 124.495 98.1481 125.664C101.812 126.575 105.523 122.131 100.852 121.046M52 121C53.6536 130.909 66.0952 121.626 56.0293 121.019C54.6991 120.939 53.3306 121.001 52 121z"/>
+<path style="fill:#47609d; stroke:none;" d="M108 121C108 124.511 107.013 128.146 111 129L111 128L108 121z"/>
+<path style="fill:#5bbcd4; stroke:none;" d="M149 124L150 125L149 124M152 140L31 140L31 141L153 141L153 170L151 177L153 186L212 187L205 169L225 176C223.093 167.969 224 158.305 224 150C224 146.524 224.907 141.334 222.397 138.51C218.923 134.604 212.573 135.98 208 135.8C194.42 135.267 180.612 136 167 136C161.878 136 153.944 134.144 152 140z"/>
+<path style="fill:#2e4176; stroke:none;" d="M31 141L32 142L31 141M21 149C21 154.618 18.4176 168.796 22.0278 173.258C24.9883 176.917 35.7764 175 40 175L77 175C81.6212 175 88.5496 173.725 92.8519 175.603C97.3889 177.584 97.6544 190.322 93.6821 192.972C89.2461 195.932 79.185 194 74 194L74 205L139 205C143.668 205 157.84 207.355 160.972 203.397C166.76 196.084 156.773 194.002 152 194C135.693 193.993 119.359 193 103 193C103 188.905 101.663 181.861 104.028 178.318C107.929 172.471 129.511 176.245 136 175.961C139.541 175.806 149.638 176.255 151.397 172.682C153.186 169.045 153.677 151.569 149.682 149.603C141.107 145.384 122.567 149 113 149L21 149z"/>
+<path style="fill:#47609d; stroke:none;" d="M20 150L20 172L21 172L20 150M116.108 157.786C109.47 160.189 113.426 169.714 119.891 167.238C126.385 164.752 122.396 155.51 116.108 157.786M205 169L205 170L205 171L209 171L209 170L205 169z"/>
+<path style="fill:#2e4176; stroke:none;" d="M206 170L217 198C219.59 196.689 222.93 193.587 226 194.337C228.625 194.979 232.386 200.153 235.338 197.914C238.271 195.688 232.767 191.154 232.198 189C231.456 186.194 234.544 183.973 233.656 181.278C231.779 175.584 211.411 171.761 206 170z"/>
+<path style="fill:#47609d; stroke:none;" d="M210.667 171.333L211.333 171.667L210.667 171.333z"/>
+<path style="fill:#5bbcd4; stroke:none;" d="M20.3333 172.667L20.6667 173.333L20.3333 172.667z"/>
+<path style="fill:#47609d; stroke:none;" d="M206.333 172.667L206.667 173.333L206.333 172.667M213.667 172.333L214.333 172.667L213.667 172.333M216.667 173.333L217.333 173.667L216.667 173.333z"/>
+<path style="fill:#5bbcd4; stroke:none;" d="M21 174L23 176L21 174z"/>
+<path style="fill:#47609d; stroke:none;" d="M22 174L23 175L22 174M207.333 174.667L207.667 175.333L207.333 174.667M219.667 174.333L220.333 174.667L219.667 174.333M23 175L23 176L75 176L93.3966 177.603L95 193L75 193C78.8544 194.617 90.8976 195.743 94.3966 192.972C97.2042 190.749 97.2042 178.251 94.3966 176.028C90.5613 172.99 79.7054 175 75 175L23 175M222.667 175.333L223.333 175.667L222.667 175.333z"/>
+<path style="fill:#f4ac25; stroke:none;" d="M41 176C43.1786 186.833 55.7031 196.137 64 202.575C94.9563 226.594 137.434 229.792 173 214.988C184.876 210.046 204.624 199.837 209 187L156.62 185.991L150.976 177.603L141 176L142 194C153.705 191.827 161.999 191.492 162 205L102 205C94.7169 205 83.9075 207.42 77.0586 205.552C72.5195 204.313 71.3586 196.821 75.3179 194.179C79.8933 191.126 89.6844 193 95 193L93.9722 177.603L80 176L41 176z"/>
+<path style="fill:#47609d; stroke:none;" d="M224.667 176.333L225.333 176.667L224.667 176.333z"/>
+<path style="fill:#5bbcd4; stroke:none;" d="M226.667 176.333L227.333 176.667L226.667 176.333z"/>
+<path style="fill:#47609d; stroke:none;" d="M208.333 177.667L208.667 178.333L208.333 177.667M227.667 177.333L228.333 177.667L227.667 177.333z"/>
+<path style="fill:#5bbcd4; stroke:none;" d="M229 177L230 178L229 177z"/>
+<path style="fill:#47609d; stroke:none;" d="M230.667 178.333L231.333 178.667L230.667 178.333z"/>
+<path style="fill:#5bbcd4; stroke:none;" d="M232 178L233 179L232 178z"/>
+<path style="fill:#47609d; stroke:none;" d="M233 179L236 183L237 180L233 179z"/>
+<path style="fill:#5bbcd4; stroke:none;" d="M234.667 179.333L235.333 179.667L234.667 179.333z"/>
+<path style="fill:#47609d; stroke:none;" d="M209.333 180.667L209.667 181.333L209.333 180.667z"/>
+<path style="fill:#5bbcd4; stroke:none;" d="M237 180L238 181L237 180z"/>
+<path style="fill:#47609d; stroke:none;" d="M210 182L210 185L211 185L210 182M234 183L235 184L234 183M153 184L154 185L153 184z"/>
+<path style="fill:#5bbcd4; stroke:none;" d="M233 184L234 185L233 184z"/>
+<path style="fill:#47609d; stroke:none;" d="M211 185L212 186L211 185z"/>
+<path style="fill:#5bbcd4; stroke:none;" d="M232 185L233 186L232 185z"/>
+<path style="fill:#f4ac25; stroke:none;" d="M209 186L210 187L209 186z"/>
+<path style="fill:#5bbcd4; stroke:none;" d="M231 186L232 187L231 186z"/>
+<path style="fill:#47609d; stroke:none;" d="M212 187L213 188L212 187M230.333 187.667L230.667 188.333L230.333 187.667z"/>
+<path style="fill:#5bbcd4; stroke:none;" d="M212 188L213 189L212 188z"/>
+<path style="fill:#47609d; stroke:none;" d="M213.333 189.667L213.667 190.333L213.333 189.667M231 189L232 190L231 189M232 190L233 191L232 190z"/>
+<path style="fill:#5bbcd4; stroke:none;" d="M213 191L214 192L213 191z"/>
+<path style="fill:#47609d; stroke:none;" d="M233 191L234 192L233 191M214 192L215 193L214 192M234 192L235 193L234 192M144 193L144 194L160 194L144 193z"/>
+<path style="fill:#5bbcd4; stroke:none;" d="M214 193L215 194L214 193z"/>
+<path style="fill:#47609d; stroke:none;" d="M223 193L224 194L223 193z"/>
+<path style="fill:#5bbcd4; stroke:none;" d="M224 193L224 194L227 195L224 193z"/>
+<path style="fill:#47609d; stroke:none;" d="M226 193L227 194L226 193M235 193L237 197L238 197L235 193z"/>
+<path style="fill:#5bbcd4; stroke:none;" d="M236 193L237 194L236 193z"/>
+<path style="fill:#47609d; stroke:none;" d="M73 194L73 197L74 197L73 194M161 194L162 195L161 194M215 194C216.102 197.012 216.766 198.07 220 198L220 197L217 198L215 194M222 194L223 195L222 194M227 194L228 195L227 194z"/>
+<path style="fill:#5bbcd4; stroke:none;" d="M237 194L238 195L237 194z"/>
+<path style="fill:#47609d; stroke:none;" d="M221 195L222 196L221 195M228 195L229 196L228 195z"/>
+<path style="fill:#5bbcd4; stroke:none;" d="M215 196L216 197L215 196z"/>
+<path style="fill:#47609d; stroke:none;" d="M220 196L221 197L220 196M229 196L230 197L229 196M230 197L231 198L230 197z"/>
+<path style="fill:#5bbcd4; stroke:none;" d="M237 197L238 198L237 197z"/>
+<path style="fill:#47609d; stroke:none;" d="M73 198L74 199L73 198z"/>
+<path style="fill:#5bbcd4; stroke:none;" d="M216 198L217 199L216 198z"/>
+<path style="fill:#47609d; stroke:none;" d="M231 198L232 199L231 198z"/>
+<path style="fill:#5bbcd4; stroke:none;" d="M236 198L237 199L236 198M217 199L218 200L217 199z"/>
+<path style="fill:#47609d; stroke:none;" d="M232 199L232 200L235 200L232 199z"/>
+<path style="fill:#5bbcd4; stroke:none;" d="M235 199L236 200L235 199M233 200L234 201L233 200z"/>
+<path style="fill:#47609d; stroke:none;" d="M73 202L73 205L74 205L73 202M161 204L162 205L161 204M75 205L75 206L83 206L75 205z"/>
+</svg>
+				
 
-	<h6 style="color:#fff;">Please connect to internet and try again.</h6>
-	<br>
-	<a href="index.html" style="text-decoration:none; background:#fff;color:#8419e5;border:5px double #8419e5;border-radius:10px;padding:4px  8px;">Refresh</a>
+<h2>You are offline !!</h2>
+<h3>Please connect to internet and try again.</h3>
 </div>
-</center>
+</center>				
+
+
+
+
+<style>
+#off{
+width:320px;
+height:260px;
+background:#8419e5;
+position:absolute;
+transform:translate(-50%,-50%);
+top:50%;
+left:50%;
+display:none;
+align-items:center;
+justify-content:center;
+flex-direction:column;
+color:#fff;
+padding-inline:15px;
+padding-bottom:20px;
+box-shadow:inset 0px 0px 15px #fff,0px 0px;
+border-radius:10px;
+border:9px double #fff;
+}				
+
+#off h2{
+position:absolute;
+top:125px;
+letter-spacing:1px;
+font-size:25px;
+text-shadow:0px 0px 10px #fff;
+}				
+
+#off h3{
+position:absolute;
+top:165px;
+font-size:17px;
+}				
+
+@media(max-width:375px){
+#off{
+width:250px;
+}
+}				
+</style>
 <!-- Offline box complete-->
 
-
-<section id="on">
-			
-<!-- popup no services-->				
-<div style="position:absolute;transform:translate(-50%,50%);left:50%;top:50%;width:250px;background:#fff;display:none;align-items:center; justify-content:center;padding: 4px 7px;border-radius:10px;border:2px solid #8419e5; " id="no-ser">
-	<h6 style="color:#000;">No services Available!!! 🤕</h6>
-<style>
-body:hover #no-ser{
-display:none;
-}
-</style>
-</div>
-
-		
 <!-- GetWeb Pop ups box to follow-->
 <div id="pop-box">
 	<img src="about2.jpg" width="100" height="102" style="border-radius:100%;border: 8px solid #8419e5;border-style:double; "><a href="javascript:void(0)" id="pop-head" onclick="popclose()">×</a>
@@ -70,7 +170,7 @@ left:50%;
 position: fixed;
 z-index:99;
 bottom:500%;
-transition:all 1s;
+transition:all 0.8s;
 background:#fff;
 display:flex;
 align-items:center;
@@ -123,6 +223,22 @@ border:1px solid #000003;
 }
 </style>	
 <!-- popup end -->
+
+
+<section id="on" style="transition:all 0.3s">
+			
+<!-- popup no services-->				
+<div style="position:absolute;transform:translate(-50%,50%);left:50%;top:50%;width:250px;background:#fff;display:none;align-items:center; justify-content:center;padding: 4px 7px;border-radius:10px;border:2px solid #8419e5; " id="no-ser">
+	<h6 style="color:#000;">No services Available!!! 🤕</h6>
+<style>
+body:hover #no-ser{
+display:none;
+}
+</style>
+</div>
+
+		
+
 		
 <!-- click sound -->
 <audio id="myAudio" hidden>
@@ -218,7 +334,7 @@ border:1px solid #000003;
 <span>			
 <input type="search" placeholder="Search Our Services...." list="ashu" id="search-form" onsearch="search()">
 &nbsp
-<img src="searchfinal.png" width="10%" height="50%" id="head_serimg">
+<img src="searchfinal.png" width="25"  id="head_serimg">
 </span>
 </div>			
 </form>
@@ -844,7 +960,7 @@ document.getElementById("blue2").style.display ="none";
 document.getElementById("green2").style.display ="none";
 document.getElementById("no-ser").style.display ="none";
 document.getElementById('pop-box').style.bottom = '45%';
-
+  
   } else {
     mybutton.style.display = "none";
   }
@@ -853,7 +969,7 @@ document.getElementById('pop-box').style.bottom = '45%';
 
 <script>	
 function popclose(){
-document.getElementById("pop-box").style.display = "none";
+document.getElementById("pop-box").style.display = "none"; 
 } 
 </script>
 
@@ -922,8 +1038,6 @@ function aboashu(){
 
 
 
-
-
 <!-- script for offline pop-box -->
 
 <script>
@@ -934,10 +1048,10 @@ function checkInternetConnection() {
   document.getElementById("off").style.display ="none";  
   } 
   else {
-     document.getElementById("off").style.display ="flex";
-       document.getElementById("on").style.display ="none"; 
-       document.getElementsByTagName("body")[0].style.background ="#fff";
-   } }				
+     document.getElementById("off").style.display ="none";
+       document.getElementById("on").style.display ="block"; 
+     document.getElementsByTagName("body")[0].style.background ="#8419e5";
+   } } 
 </script>
 
 <!-- none = flex
