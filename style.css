@@ -188,6 +188,14 @@ z-index:999;
 left:10px;
 }
 
+@media(min-width:1000px){
+.slidebutton{
+left:20px;
+top:120px;				
+}				
+}
+
+
 @keyframes slidero {
 from{
 transform:rotate(0deg);	
@@ -372,14 +380,14 @@ box-shadow:inset 0px 0px 5px #fff;
 
 @media screen and (min-width: 480px) {
 #nav-btn{
-margin-right:2rem;
+margin-right:1rem;
 }
 }
 
 
 @media screen and (min-width: 480px) {
 #nav_brand{
-margin-left:2rem;
+margin-left:1rem;
 }
 }
 
@@ -495,6 +503,13 @@ width:26.2ch;
 padding-top:7rem;
 }
 
+@media(min-width:1000px){
+#head_1{
+padding-top:9rem;
+padding-bottom:2rem;
+}				
+}
+
 
 @keyframes bli {
 0%{
@@ -520,6 +535,12 @@ border-bottom-left-radius:70px;
 border-bottom-right-radius:70px;
 padding:30px;
 box-shadow:inset 0px 0px 5px #fff;
+}
+
+@media(min-width:1000px){
+#header{
+background-attachment:fixed;
+}				
 }
 
 #head_font{
